@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-gray-200; }
+  body { @apply bg-gray-50 text-gray-900 font-sans antialiased; }
+}
+
+@layer components {
+  .score-high  { @apply text-emerald-600 bg-emerald-50 border-emerald-200; }
+  .score-med   { @apply text-amber-600  bg-amber-50  border-amber-200; }
+  .score-low   { @apply text-red-600   bg-red-50   border-red-200; }
+  .card        { @apply bg-white rounded-xl border border-gray-100 shadow-sm; }
+  .btn-primary { @apply bg-navy-800 hover:bg-navy-900 text-white font-medium px-4 py-2 rounded-lg transition-colors; }
+  .btn-ghost   { @apply text-gray-600 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors; }
+}
+
+/* Score bar animation */
+.score-bar-fill { transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* Sidebar active state */
+.nav-active { @apply bg-navy-700 text-white; }
+
+/* Province row hover */
+.province-row:hover { @apply bg-blue-50 cursor-pointer; }
+
+/* Ken Burns — slow continuous pan & zoom for hero imagery */
+@keyframes kenburns {
+  0%   { transform: scale(1)    translate(0, 0); }
+  50%  { transform: scale(1.12) translate(-1.5%, -1%); }
+  100% { transform: scale(1.05) translate(1.5%, 0.5%); }
+}
+.kenburns {
+  animation: kenburns 36s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Slow Ken Burns variant for city panels */
+@keyframes kenburns-slow {
+  0%   { transform: scale(1.02) translate(0, 0); }
+  100% { transform: scale(1.14) translate(-1%, -1.5%); }
+}
+.kenburns-slow { animation: kenburns-slow 28s ease-in-out infinite alternate; will-change: transform; }
+
+/* Infinite marquee ticker */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee { animation: marquee 32s linear infinite; width: max-content; }
+.marquee:hover { animation-play-state: paused; }
+
+/* Gold shimmer sweep on gradient text */
+@keyframes shimmer { 0% { background-position: 200% center; } 100% { background-position: -200% center; } }
+.shimmer-gold { background-size: 200% auto; animation: shimmer 6s linear infinite; }
+
+/* Card hover lift */
+.lift { transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s; }
+.lift:hover { transform: translateY(-6px); box-shadow: 0 24px 48px -16px rgba(3,7,30,0.35); }
+
+/* Floating animation for hero heading */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+.float-hero { animation: float 4s ease-in-out infinite; }
+
+/* Subtle glow pulse for emphasis */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.6); }
+}
+.glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+
+/* Cinematic text appear with scale */
+@keyframes scale-in-fade {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.scale-in-fade { animation: scale-in-fade 0.8s ease-out forwards; }
