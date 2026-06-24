@@ -35,7 +35,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/contact" className="text-navy-300 hover:text-gold-400 transition-colors">Contact</Link></li>
               <li><a href="https://wa.me/?text=Hi%20Polaris%20team" target="_blank" rel="noopener" className="text-navy-300 hover:text-gold-400 transition-colors">WhatsApp</a></li>
-              <li><a href="mailto:hello@polaris.ai" className="text-navy-300 hover:text-gold-400 transition-colors">Email</a></li>
+              <li><a href="mailto:hello@polarisuni.com" className="text-navy-300 hover:text-gold-400 transition-colors">Email</a></li>
             </ul>
           </div>
 

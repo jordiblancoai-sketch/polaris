@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import {
-  ArrowRight, Check, X, Play, Bell,
+  ArrowRight, Check, X, Play, Bell, Menu,
   Target, BarChart2, Plane, Clock,
   DollarSign, Users, MapPin, TrendingUp,
 } from "lucide-react";
@@ -209,6 +209,7 @@ export default function LandingPage() {
   const [heroIdx, setHeroIdx] = useState(0);
   const [selectedCorridor, setSelectedCorridor] = useState<any>(null);
   const [notifyOpen, setNotifyOpen] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
   const [notifyForm, setNotifyForm] = useState({ email: "", institution: "" });
   const [notifySuccess, setNotifySuccess] = useState(false);
 
@@ -244,11 +245,28 @@ export default function LandingPage() {
             <button onClick={() => setNotifyOpen(true)} className="hidden md:flex text-xs font-semibold text-gold-400 hover:text-gold-300 px-3 py-2 gap-1.5 items-center transition-colors">
               <Bell className="w-3.5 h-3.5" /> Notify Me
             </button>
-            <button onClick={() => setContactModal(true)} className="bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors flex items-center gap-1.5">
+            <button onClick={() => setContactModal(true)} className="bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5">
               Request Demo <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+            {/* Mobile menu toggle */}
+            <button onClick={() => setMobileMenu(o => !o)} aria-label="Open menu" aria-expanded={mobileMenu}
+              className="md:hidden p-2 -mr-1 text-gray-700 hover:text-navy-900 transition-colors">
+              {mobileMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
+
+        {/* Mobile dropdown menu */}
+        {mobileMenu && (
+          <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 flex flex-col gap-1">
+            {[["Product","/map"],["Demo","/demo"],["Free Strategic Plan","/strategic-plan"],["Pricing","#pricing"],["Contact","/contact"]].map(([l,h]) => (
+              <Link key={l} href={h} onClick={() => setMobileMenu(false)}
+                className="text-sm font-medium text-gray-700 hover:text-navy-900 py-2.5 transition-colors">{l}</Link>
+            ))}
+            <Link href="/login" onClick={() => setMobileMenu(false)}
+              className="text-sm font-semibold text-navy-900 py-2.5 border-t border-gray-100 mt-1">Sign in</Link>
+          </div>
+        )}
       </nav>
 
       {/* HERO — cinematic full-screen */}
