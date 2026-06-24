@@ -6,6 +6,7 @@ import { WorldMap } from "@/components/WorldMap";
 import { ChinaMap } from "@/components/ChinaMap";
 import { JapanMap } from "@/components/JapanMap";
 import { SingaporeMap } from "@/components/SingaporeMap";
+import { KoreaMap } from "@/components/KoreaMap";
 import { ProvinceModal } from "@/components/ProvinceModal";
 
 type View = "world" | CorridorSummary["key"];
@@ -52,7 +53,7 @@ export function CorridorExplorer() {
               </h1>
               <p className="text-navy-400 text-xs md:text-sm mt-0.5 truncate">
                 {view === "world"
-                  ? "3 active corridors · click a country to explore"
+                  ? "4 active corridors · click a country to explore"
                   : `${corridor!.regionsScored} regions scored · top: ${corridor!.topRegion} (${corridor!.topScore})`}
               </p>
             </div>
@@ -201,6 +202,51 @@ export function CorridorExplorer() {
                     if (r) setSelected(r);
                   }}
                   selectedRegion={selected?.target_entity_name || null}
+                />
+              </div>
+            </div>
+          )}
+
+          {view === "korea" && (
+            <div className="flex h-full">
+              {/* Ranked standings list */}
+              <div className="w-full max-w-sm border-r border-navy-800 overflow-y-auto bg-navy-950 shrink-0 hidden md:block">
+                <div className="px-4 py-3 sticky top-0 bg-navy-950 border-b border-navy-800 z-10">
+                  <div className="text-white text-sm font-bold">Ranked opportunity standings</div>
+                  <div className="text-navy-500 text-[10px]">17 provinces · click for full analysis</div>
+                </div>
+                <div className="divide-y divide-navy-800/60">
+                  {corridor!.scores.map(r => {
+                    const color = r.score >= 70 ? "#10b981" : r.score >= 50 ? "#d97706" : "#ef4444";
+                    const active = selected?.target_entity_name === r.target_entity_name;
+                    return (
+                      <button key={r.target_entity_id} onClick={() => setSelected(r)}
+                        className={`w-full text-left px-4 py-3 transition-colors ${active ? "bg-navy-800" : "hover:bg-navy-900"}`}>
+                        <div className="flex items-center gap-3">
+                          <span className="text-navy-600 text-xs font-bold w-5 shrink-0">{r.rank}</span>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center justify-between mb-1">
+                              <span className="text-white text-sm font-semibold truncate">{r.target_entity_name}</span>
+                              <span className="text-sm font-black ml-2" style={{ color }}>{r.score}</span>
+                            </div>
+                            <div className="h-1.5 bg-navy-800 rounded-full overflow-hidden">
+                              <div className="h-full rounded-full" style={{ width: `${r.score}%`, backgroundColor: color }} />
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+              {/* Map */}
+              <div className="flex-1 relative">
+                <KoreaMap
+                  onProvinceSelect={(name) => {
+                    const r = corridor!.scores.find(s => s.target_entity_name === name);
+                    if (r) setSelected(r);
+                  }}
+                  selectedProvince={selected?.target_entity_name || null}
                 />
               </div>
             </div>
