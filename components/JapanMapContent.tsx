@@ -53,7 +53,9 @@ export default function JapanMapContent({ onPrefectureSelect, selectedPrefecture
         <Geographies geography={GEO_URL}>
           {({ geographies }: any) =>
             geographies.map((geo: any) => {
-              const name = (geo.properties?.shapeName || geo.properties?.name || "").toUpperCase();
+              let name = (geo.properties?.shapeName || geo.properties?.name || "").trim();
+              // Remove " Prefecture" suffix if present
+              name = name.replace(/ Prefecture$/, "").replace(/ Region$/, "");
               const hasScore = scoreMap[name] !== undefined;
               const score = scoreMap[name] ?? 45;
               const isSelected = selectedPrefecture === name;

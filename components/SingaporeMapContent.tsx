@@ -53,7 +53,9 @@ export default function SingaporeMapContent({ onRegionSelect, selectedRegion }: 
         <Geographies geography={GEO_URL}>
           {({ geographies }: any) =>
             geographies.map((geo: any) => {
-              const name = (geo.properties?.shapeName || geo.properties?.name || "").toUpperCase();
+              let name = (geo.properties?.shapeName || geo.properties?.name || "").trim();
+              // Remove " Region" suffix if present
+              name = name.replace(/ Region$/, "").replace(/ Prefecture$/, "");
               const hasScore = scoreMap[name] !== undefined;
               const score = scoreMap[name] ?? 45;
               const isSelected = selectedRegion === name;
