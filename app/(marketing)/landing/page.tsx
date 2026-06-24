@@ -17,6 +17,7 @@ import { DemoVideo } from "@/components/demo/DemoVideo";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CorridorModal } from "@/components/CorridorModal";
 import { Footer } from "@/components/Footer";
+import { FAQ } from "@/components/FAQ";
 
 /* ─── Utilities ───────────────────────────────────────────── */
 const usd = (n: number) =>
@@ -236,7 +237,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/landing" aria-label="Polaris home"><Logo size="md" /></Link>
           <div className="hidden md:flex gap-8">
-            {[["Free Strategic Plan","/strategic-plan"],["Product","/map"],["Demo","/demo"],["Pricing","#pricing"]].map(([l,h]) => (
+            {[["Free Strategic Plan","/strategic-plan"],["Product","/map"],["Demo","/demo"],["Pricing","#pricing"],["FAQ","#faq"]].map(([l,h]) => (
               <Link key={l} href={h} target={h.startsWith("#") ? undefined : "_blank"} rel="noopener" className="text-sm font-medium text-gray-600 hover:text-navy-900 transition-colors">{l}</Link>
             ))}
           </div>
@@ -259,7 +260,7 @@ export default function LandingPage() {
         {/* Mobile dropdown menu */}
         {mobileMenu && (
           <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 flex flex-col gap-1">
-            {[["Product","/map"],["Demo","/demo"],["Free Strategic Plan","/strategic-plan"],["Pricing","#pricing"],["Contact","/contact"]].map(([l,h]) => (
+            {[["Product","/map"],["Demo","/demo"],["Free Strategic Plan","/strategic-plan"],["Pricing","#pricing"],["FAQ","#faq"],["Contact","/contact"]].map(([l,h]) => (
               <Link key={l} href={h} onClick={() => setMobileMenu(false)}
                 className="text-sm font-medium text-gray-700 hover:text-navy-900 py-2.5 transition-colors">{l}</Link>
             ))}
@@ -792,6 +793,9 @@ export default function LandingPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* FAQ / Q&A */}
+      <FAQ />
 
       {/* FINAL CTA */}
       <section className="bg-navy-950 py-24 px-6">
