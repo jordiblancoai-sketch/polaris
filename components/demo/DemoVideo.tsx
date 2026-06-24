@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause, RotateCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ChinaMap } from "@/components/ChinaMap";
+import { JapanMap } from "@/components/JapanMap";
+import { SingaporeMap } from "@/components/SingaporeMap";
 import { CorridorModal } from "@/components/CorridorModal";
 
 /* ─── Scene data ─────────────────────────────────────────────── */
@@ -201,19 +203,16 @@ function SceneMap({ progress: _progress, corridor = "china" }: { progress: numbe
 
   return (
     <div className="h-full p-4">
-      {/* Map visualization - China uses ChinaMap component, others show data grid */}
+      {/* Map visualization - real interactive map per corridor */}
       <div className="relative h-full rounded-2xl overflow-hidden border border-white/10 bg-navy-900 flex items-center justify-center">
-        {corridor === "china" ? (
-          <>
-            <ChinaMap />
-            <div className="absolute bottom-3 right-3 text-white/50 text-xs bg-navy-900/70 rounded px-2 py-1">→ 🇺🇸 United States</div>
-          </>
+        {corridor === "japan" ? (
+          <JapanMap />
+        ) : corridor === "singapore" ? (
+          <SingaporeMap />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-6 p-8">
-            <div className="text-4xl font-black text-gold-400">{mapLabels[corridor as keyof typeof mapLabels]}</div>
-            <div className="text-white/60 text-sm">31+ regions scored and ranked</div>
-          </div>
+          <ChinaMap />
         )}
+        <div className="absolute bottom-3 right-3 text-white/50 text-xs bg-navy-900/70 rounded px-2 py-1">{mapLabels[corridor as keyof typeof mapLabels] || mapLabels.china}</div>
       </div>
     </div>
   );
@@ -689,8 +688,16 @@ export function DemoVideo({ corridor = "china" }: { corridor?: string }) {
         <motion.div key={scene.id + "-title"}
           className="absolute bottom-10 left-0 right-0 px-8 pt-14 pb-3 text-center bg-gradient-to-t from-navy-950 via-navy-950/95 to-transparent pointer-events-none"
           initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-          <div className="text-white font-bold text-sm">{scene.title}</div>
-          <div className="text-white/60 text-xs mt-0.5">{scene.subtitle}</div>
+          <div className="text-white font-bold text-sm">
+            {scene.id === "map"
+              ? `${getCorridorData(corridor).count} of ${getCorridorData(corridor).name}. Scored.`
+              : scene.title}
+          </div>
+          <div className="text-white/60 text-xs mt-0.5">
+            {scene.id === "map"
+              ? "Every region ranked by probability of enrollment yield — updated nightly."
+              : scene.subtitle}
+          </div>
         </motion.div>
       </AnimatePresence>
 
