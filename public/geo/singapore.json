@@ -1,45 +1,10 @@
 {
   "type": "FeatureCollection",
   "features": [
-    {
-      "type": "Feature",
-      "properties": {"name": "Central Region"},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[103.83, 1.29], [103.88, 1.29], [103.88, 1.35], [103.83, 1.35], [103.83, 1.29]]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {"name": "East Region"},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[103.88, 1.29], [103.98, 1.29], [103.98, 1.40], [103.88, 1.40], [103.88, 1.29]]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {"name": "North Region"},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[103.73, 1.35], [103.88, 1.35], [103.88, 1.45], [103.73, 1.45], [103.73, 1.35]]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {"name": "Northeast Region"},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[103.88, 1.35], [103.98, 1.35], [103.98, 1.45], [103.88, 1.45], [103.88, 1.35]]]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {"name": "West Region"},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [[[103.63, 1.29], [103.83, 1.29], [103.83, 1.40], [103.63, 1.40], [103.63, 1.29]]]
-      }
-    }
+    {"type": "Feature", "properties": {"name": "Central Region"}, "geometry": {"type": "Polygon", "coordinates": [[[103.82,1.32],[103.87,1.31],[103.88,1.36],[103.83,1.37],[103.82,1.32]]]}},
+    {"type": "Feature", "properties": {"name": "East Region"}, "geometry": {"type": "Polygon", "coordinates": [[[103.88,1.32],[103.97,1.31],[103.98,1.40],[103.89,1.41],[103.88,1.32]]]}},
+    {"type": "Feature", "properties": {"name": "North Region"}, "geometry": {"type": "Polygon", "coordinates": [[[103.73,1.36],[103.87,1.37],[103.88,1.46],[103.74,1.47],[103.73,1.36]]]}},
+    {"type": "Feature", "properties": {"name": "Northeast Region"}, "geometry": {"type": "Polygon", "coordinates": [[[103.88,1.36],[103.98,1.35],[103.99,1.46],[103.89,1.47],[103.88,1.36]]]}},
+    {"type": "Feature", "properties": {"name": "West Region"}, "geometry": {"type": "Polygon", "coordinates": [[[103.62,1.30],[103.82,1.31],[103.83,1.40],[103.63,1.41],[103.62,1.30]]]}}
   ]
 }
