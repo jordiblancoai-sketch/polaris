@@ -20,8 +20,10 @@ export default function JapanMapContent({ onPrefectureSelect, selectedPrefecture
   const [hovered, setHovered] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; score: number } | null>(null);
 
-  const scoreMap: Record<string, number> = {};
-  MOCK_SCORES.forEach(s => { if (s.target_country_iso === "JPN") scoreMap[s.target_entity_name] = s.score; });
+  // Normalize names so GeoJSON ("Osaka Prefecture") matches score data ("Osaka")
+  const norm = (s: string) => s.toUpperCase().replace(/PREFECTURE|REGION/g, "").replace(/[^A-Z]/g, "");
+  const scoreMap: Record<string, { score: number; name: string }> = {};
+  MOCK_SCORES.forEach(s => { if (s.target_country_iso === "JPN") scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
 
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-blue-950 to-navy-950 rounded-xl overflow-hidden">
@@ -45,7 +47,7 @@ export default function JapanMapContent({ onPrefectureSelect, selectedPrefecture
 
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ center: [138, 36], scale: 1200 }}
+        projectionConfig={{ center: [137.5, 38], scale: 1400 }}
         width={800}
         height={600}
         style={{ width: "100%", height: "100%" }}
@@ -53,11 +55,11 @@ export default function JapanMapContent({ onPrefectureSelect, selectedPrefecture
         <Geographies geography={GEO_URL}>
           {({ geographies }: any) =>
             geographies.map((geo: any) => {
-              let name = (geo.properties?.shapeName || geo.properties?.name || "").trim();
-              // Remove " Prefecture" suffix if present
-              name = name.replace(/ Prefecture$/, "").replace(/ Region$/, "");
-              const hasScore = scoreMap[name] !== undefined;
-              const score = scoreMap[name] ?? 45;
+              const rawName = (geo.properties?.shapeName || geo.properties?.name || "").trim();
+              const entry = scoreMap[norm(rawName)];
+              const name = entry?.name ?? rawName;
+              const hasScore = entry !== undefined;
+              const score = entry?.score ?? 45;
               const isSelected = selectedPrefecture === name;
               const isHovered = hovered === name;
 

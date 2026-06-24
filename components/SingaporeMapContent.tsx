@@ -20,8 +20,10 @@ export default function SingaporeMapContent({ onRegionSelect, selectedRegion }: 
   const [hovered, setHovered] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; score: number } | null>(null);
 
-  const scoreMap: Record<string, number> = {};
-  MOCK_SCORES.forEach(s => { if (s.target_country_iso === "SGP") scoreMap[s.target_entity_name] = s.score; });
+  // Normalize names so GeoJSON ("NORTH-EAST REGION") matches score data ("Northeast Region")
+  const norm = (s: string) => s.toUpperCase().replace(/PREFECTURE|REGION/g, "").replace(/[^A-Z]/g, "");
+  const scoreMap: Record<string, { score: number; name: string }> = {};
+  MOCK_SCORES.forEach(s => { if (s.target_country_iso === "SGP") scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
 
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-emerald-950 to-navy-950 rounded-xl overflow-hidden">
@@ -53,11 +55,11 @@ export default function SingaporeMapContent({ onRegionSelect, selectedRegion }: 
         <Geographies geography={GEO_URL}>
           {({ geographies }: any) =>
             geographies.map((geo: any) => {
-              let name = (geo.properties?.shapeName || geo.properties?.name || "").trim();
-              // Remove " Region" suffix if present
-              name = name.replace(/ Region$/, "").replace(/ Prefecture$/, "");
-              const hasScore = scoreMap[name] !== undefined;
-              const score = scoreMap[name] ?? 45;
+              const rawName = (geo.properties?.shapeName || geo.properties?.name || "").trim();
+              const entry = scoreMap[norm(rawName)];
+              const name = entry?.name ?? rawName;
+              const hasScore = entry !== undefined;
+              const score = entry?.score ?? 45;
               const isSelected = selectedRegion === name;
               const isHovered = hovered === name;
 
