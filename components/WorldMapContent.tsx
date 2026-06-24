@@ -21,13 +21,13 @@ export default function WorldMapContent({ onCorridorSelect }: Props) {
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950 rounded-xl overflow-hidden">
       <div className="absolute top-6 left-6 z-20 bg-navy-900/90 backdrop-blur-sm rounded-lg px-4 py-3 border border-navy-700">
-        <div className="text-white font-bold text-sm">4 Active Corridors → 🇺🇸 US</div>
+        <div className="text-white font-bold text-sm">5 Active Corridors → 🇺🇸 US</div>
         <div className="text-navy-400 text-[10px] mt-0.5">Click a country to explore its regions</div>
       </div>
 
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ center: [120, 28], scale: 340 }}
+        projectionConfig={{ center: [108, 26], scale: 330 }}
         width={800}
         height={600}
         style={{ width: "100%", height: "100%" }}
@@ -36,7 +36,7 @@ export default function WorldMapContent({ onCorridorSelect }: Props) {
           {({ geographies }: any) =>
             geographies.map((geo: any) => {
               const name = geo.properties?.name || "";
-              const isCorridor = ["China", "Japan", "Singapore", "South Korea"].includes(name);
+              const isCorridor = ["China", "Japan", "Singapore", "South Korea", "India"].includes(name);
               return (
                 <Geography
                   key={geo.rsmKey}
