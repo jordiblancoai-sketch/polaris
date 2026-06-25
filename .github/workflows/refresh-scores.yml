@@ -1,9 +1,10 @@
 name: Refresh corridor scores (Bright Data)
 
-# Nightly at 02:00 UTC, plus manual "Run workflow" button.
+# Weekly — Mondays at 06:00 UTC (stays within Bright Data's free tier),
+# plus a manual "Run workflow" button.
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 jobs:
