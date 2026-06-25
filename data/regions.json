@@ -4,127 +4,158 @@
   "regions": [
    {
     "id": "1",
-    "name": "Zhejiang"
+    "name": "Zhejiang",
+    "prior": 82
    },
    {
     "id": "2",
-    "name": "Jiangsu"
+    "name": "Jiangsu",
+    "prior": 81
    },
    {
     "id": "3",
-    "name": "Fujian"
+    "name": "Fujian",
+    "prior": 76
    },
    {
     "id": "4",
-    "name": "Sichuan"
+    "name": "Sichuan",
+    "prior": 74
    },
    {
     "id": "5",
-    "name": "Hubei"
+    "name": "Hubei",
+    "prior": 73
    },
    {
     "id": "6",
-    "name": "Hunan"
+    "name": "Hunan",
+    "prior": 72
    },
    {
     "id": "7",
-    "name": "Shaanxi"
+    "name": "Shaanxi",
+    "prior": 71
    },
    {
     "id": "8",
-    "name": "Shandong"
+    "name": "Shandong",
+    "prior": 70
    },
    {
     "id": "9",
-    "name": "Chongqing"
+    "name": "Chongqing",
+    "prior": 68
    },
    {
     "id": "10",
-    "name": "Tianjin"
+    "name": "Tianjin",
+    "prior": 66
    },
    {
     "id": "11",
-    "name": "Liaoning"
+    "name": "Liaoning",
+    "prior": 63
    },
    {
     "id": "12",
-    "name": "Hebei"
+    "name": "Hebei",
+    "prior": 62
    },
    {
     "id": "13",
-    "name": "Inner Mongolia"
+    "name": "Inner Mongolia",
+    "prior": 60
    },
    {
     "id": "14",
-    "name": "Guangdong"
+    "name": "Guangdong",
+    "prior": 58
    },
    {
     "id": "15",
-    "name": "Shanxi"
+    "name": "Shanxi",
+    "prior": 55
    },
    {
     "id": "16",
-    "name": "Anhui"
+    "name": "Anhui",
+    "prior": 53
    },
    {
     "id": "17",
-    "name": "Jiangxi"
+    "name": "Jiangxi",
+    "prior": 50
    },
    {
     "id": "18",
-    "name": "Henan"
+    "name": "Henan",
+    "prior": 47
    },
    {
     "id": "19",
-    "name": "Guangxi"
+    "name": "Guangxi",
+    "prior": 46
    },
    {
     "id": "20",
-    "name": "Hainan"
+    "name": "Hainan",
+    "prior": 44
    },
    {
     "id": "21",
-    "name": "Heilongjiang"
+    "name": "Heilongjiang",
+    "prior": 43
    },
    {
     "id": "22",
-    "name": "Jilin"
+    "name": "Jilin",
+    "prior": 42
    },
    {
     "id": "23",
-    "name": "Yunnan"
+    "name": "Yunnan",
+    "prior": 40
    },
    {
     "id": "24",
-    "name": "Guizhou"
+    "name": "Guizhou",
+    "prior": 38
    },
    {
     "id": "25",
-    "name": "Ningxia"
+    "name": "Ningxia",
+    "prior": 36
    },
    {
     "id": "26",
-    "name": "Shanxi"
+    "name": "Shanxi",
+    "prior": 35
    },
    {
     "id": "27",
-    "name": "Gansu"
+    "name": "Gansu",
+    "prior": 32
    },
    {
     "id": "28",
-    "name": "Beijing"
+    "name": "Beijing",
+    "prior": 28
    },
    {
     "id": "29",
-    "name": "Shanghai"
+    "name": "Shanghai",
+    "prior": 26
    },
    {
     "id": "30",
-    "name": "Xinjiang"
+    "name": "Xinjiang",
+    "prior": 18
    },
    {
     "id": "31",
-    "name": "Tibet"
+    "name": "Tibet",
+    "prior": 12
    }
   ]
  },
@@ -133,191 +164,238 @@
   "regions": [
    {
     "id": "jp1",
-    "name": "Kyoto"
+    "name": "Kyoto",
+    "prior": 78
    },
    {
     "id": "jp2",
-    "name": "Osaka"
+    "name": "Osaka",
+    "prior": 76
    },
    {
     "id": "jp3",
-    "name": "Tokyo"
+    "name": "Tokyo",
+    "prior": 75
    },
    {
     "id": "jp4",
-    "name": "Kanagawa"
+    "name": "Kanagawa",
+    "prior": 74
    },
    {
     "id": "jp5",
-    "name": "Saitama"
+    "name": "Saitama",
+    "prior": 72
    },
    {
     "id": "jp6",
-    "name": "Aichi"
+    "name": "Aichi",
+    "prior": 70
    },
    {
     "id": "jp7",
-    "name": "Fukuoka"
+    "name": "Fukuoka",
+    "prior": 68
    },
    {
     "id": "jp8",
-    "name": "Hiroshima"
+    "name": "Hiroshima",
+    "prior": 65
    },
    {
     "id": "jp9",
-    "name": "Nagoya"
+    "name": "Nagoya",
+    "prior": 62
    },
    {
     "id": "jp10",
-    "name": "Hyogo"
+    "name": "Hyogo",
+    "prior": 60
    },
    {
     "id": "jp11",
-    "name": "Shiga"
+    "name": "Shiga",
+    "prior": 58
    },
    {
     "id": "jp12",
-    "name": "Nara"
+    "name": "Nara",
+    "prior": 56
    },
    {
     "id": "jp13",
-    "name": "Wakayama"
+    "name": "Wakayama",
+    "prior": 54
    },
    {
     "id": "jp14",
-    "name": "Okayama"
+    "name": "Okayama",
+    "prior": 53
    },
    {
     "id": "jp15",
-    "name": "Kagawa"
+    "name": "Kagawa",
+    "prior": 52
    },
    {
     "id": "jp16",
-    "name": "Ehime"
+    "name": "Ehime",
+    "prior": 51
    },
    {
     "id": "jp17",
-    "name": "Koichi"
+    "name": "Koichi",
+    "prior": 50
    },
    {
     "id": "jp18",
-    "name": "Tokushima"
+    "name": "Tokushima",
+    "prior": 48
    },
    {
     "id": "jp19",
-    "name": "Hokkaido"
+    "name": "Hokkaido",
+    "prior": 47
    },
    {
     "id": "jp20",
-    "name": "Aomori"
+    "name": "Aomori",
+    "prior": 46
    },
    {
     "id": "jp21",
-    "name": "Iwate"
+    "name": "Iwate",
+    "prior": 45
    },
    {
     "id": "jp22",
-    "name": "Miyagi"
+    "name": "Miyagi",
+    "prior": 44
    },
    {
     "id": "jp23",
-    "name": "Akita"
+    "name": "Akita",
+    "prior": 43
    },
    {
     "id": "jp24",
-    "name": "Yamagata"
+    "name": "Yamagata",
+    "prior": 42
    },
    {
     "id": "jp25",
-    "name": "Fukushima"
+    "name": "Fukushima",
+    "prior": 41
    },
    {
     "id": "jp26",
-    "name": "Ibaraki"
+    "name": "Ibaraki",
+    "prior": 40
    },
    {
     "id": "jp27",
-    "name": "Tochigi"
+    "name": "Tochigi",
+    "prior": 39
    },
    {
     "id": "jp28",
-    "name": "Gunma"
+    "name": "Gunma",
+    "prior": 38
    },
    {
     "id": "jp29",
-    "name": "Niigata"
+    "name": "Niigata",
+    "prior": 37
    },
    {
     "id": "jp30",
-    "name": "Toyama"
+    "name": "Toyama",
+    "prior": 36
    },
    {
     "id": "jp31",
-    "name": "Ishikawa"
+    "name": "Ishikawa",
+    "prior": 35
    },
    {
     "id": "jp32",
-    "name": "Fukui"
+    "name": "Fukui",
+    "prior": 34
    },
    {
     "id": "jp33",
-    "name": "Yamanashi"
+    "name": "Yamanashi",
+    "prior": 33
    },
    {
     "id": "jp34",
-    "name": "Nagano"
+    "name": "Nagano",
+    "prior": 32
    },
    {
     "id": "jp35",
-    "name": "Gifu"
+    "name": "Gifu",
+    "prior": 31
    },
    {
     "id": "jp36",
-    "name": "Mie"
+    "name": "Mie",
+    "prior": 30
    },
    {
     "id": "jp37",
-    "name": "Yamaguchi"
+    "name": "Yamaguchi",
+    "prior": 29
    },
    {
     "id": "jp38",
-    "name": "Saga"
+    "name": "Saga",
+    "prior": 28
    },
    {
     "id": "jp39",
-    "name": "Nagasaki"
+    "name": "Nagasaki",
+    "prior": 27
    },
    {
     "id": "jp40",
-    "name": "Kumamoto"
+    "name": "Kumamoto",
+    "prior": 26
    },
    {
     "id": "jp41",
-    "name": "Oita"
+    "name": "Oita",
+    "prior": 25
    },
    {
     "id": "jp42",
-    "name": "Miyazaki"
+    "name": "Miyazaki",
+    "prior": 24
    },
    {
     "id": "jp43",
-    "name": "Kagoshima"
+    "name": "Kagoshima",
+    "prior": 23
    },
    {
     "id": "jp44",
-    "name": "Okinawa"
+    "name": "Okinawa",
+    "prior": 22
    },
    {
     "id": "jp45",
-    "name": "Shimane"
+    "name": "Shimane",
+    "prior": 20
    },
    {
     "id": "jp46",
-    "name": "Tottori"
+    "name": "Tottori",
+    "prior": 18
    },
    {
     "id": "jp47",
-    "name": "Akita"
+    "name": "Akita",
+    "prior": 15
    }
   ]
  },
@@ -326,71 +404,88 @@
   "regions": [
    {
     "id": "kr1",
-    "name": "Seoul"
+    "name": "Seoul",
+    "prior": 84
    },
    {
     "id": "kr2",
-    "name": "Gyeonggi"
+    "name": "Gyeonggi",
+    "prior": 80
    },
    {
     "id": "kr3",
-    "name": "Busan"
+    "name": "Busan",
+    "prior": 76
    },
    {
     "id": "kr4",
-    "name": "Incheon"
+    "name": "Incheon",
+    "prior": 73
    },
    {
     "id": "kr5",
-    "name": "Daejeon"
+    "name": "Daejeon",
+    "prior": 70
    },
    {
     "id": "kr6",
-    "name": "Daegu"
+    "name": "Daegu",
+    "prior": 66
    },
    {
     "id": "kr7",
-    "name": "Gwangju"
+    "name": "Gwangju",
+    "prior": 63
    },
    {
     "id": "kr8",
-    "name": "Ulsan"
+    "name": "Ulsan",
+    "prior": 60
    },
    {
     "id": "kr9",
-    "name": "Sejong"
+    "name": "Sejong",
+    "prior": 57
    },
    {
     "id": "kr10",
-    "name": "South Gyeongsang"
+    "name": "South Gyeongsang",
+    "prior": 54
    },
    {
     "id": "kr11",
-    "name": "North Gyeongsang"
+    "name": "North Gyeongsang",
+    "prior": 51
    },
    {
     "id": "kr12",
-    "name": "South Chungcheong"
+    "name": "South Chungcheong",
+    "prior": 48
    },
    {
     "id": "kr13",
-    "name": "North Chungcheong"
+    "name": "North Chungcheong",
+    "prior": 45
    },
    {
     "id": "kr14",
-    "name": "Gangwon"
+    "name": "Gangwon",
+    "prior": 42
    },
    {
     "id": "kr15",
-    "name": "North Jeolla"
+    "name": "North Jeolla",
+    "prior": 39
    },
    {
     "id": "kr16",
-    "name": "South Jeolla"
+    "name": "South Jeolla",
+    "prior": 36
    },
    {
     "id": "kr17",
-    "name": "Jeju"
+    "name": "Jeju",
+    "prior": 32
    }
   ]
  },
@@ -399,147 +494,183 @@
   "regions": [
    {
     "id": "in1",
-    "name": "Andhra Pradesh"
+    "name": "Andhra Pradesh",
+    "prior": 86
    },
    {
     "id": "in2",
-    "name": "Telangana"
+    "name": "Telangana",
+    "prior": 84
    },
    {
     "id": "in3",
-    "name": "Maharashtra"
+    "name": "Maharashtra",
+    "prior": 82
    },
    {
     "id": "in4",
-    "name": "Gujarat"
+    "name": "Gujarat",
+    "prior": 78
    },
    {
     "id": "in5",
-    "name": "Tamil Nadu"
+    "name": "Tamil Nadu",
+    "prior": 76
    },
    {
     "id": "in6",
-    "name": "Karnataka"
+    "name": "Karnataka",
+    "prior": 74
    },
    {
     "id": "in7",
-    "name": "Delhi"
+    "name": "Delhi",
+    "prior": 72
    },
    {
     "id": "in8",
-    "name": "Punjab"
+    "name": "Punjab",
+    "prior": 70
    },
    {
     "id": "in9",
-    "name": "Uttar Pradesh"
+    "name": "Uttar Pradesh",
+    "prior": 66
    },
    {
     "id": "in10",
-    "name": "Kerala"
+    "name": "Kerala",
+    "prior": 64
    },
    {
     "id": "in11",
-    "name": "Haryana"
+    "name": "Haryana",
+    "prior": 62
    },
    {
     "id": "in12",
-    "name": "West Bengal"
+    "name": "West Bengal",
+    "prior": 60
    },
    {
     "id": "in13",
-    "name": "Rajasthan"
+    "name": "Rajasthan",
+    "prior": 58
    },
    {
     "id": "in14",
-    "name": "Madhya Pradesh"
+    "name": "Madhya Pradesh",
+    "prior": 55
    },
    {
     "id": "in15",
-    "name": "Bihar"
+    "name": "Bihar",
+    "prior": 52
    },
    {
     "id": "in16",
-    "name": "Jharkhand"
+    "name": "Jharkhand",
+    "prior": 50
    },
    {
     "id": "in17",
-    "name": "Odisha"
+    "name": "Odisha",
+    "prior": 48
    },
    {
     "id": "in18",
-    "name": "Chhattisgarh"
+    "name": "Chhattisgarh",
+    "prior": 46
    },
    {
     "id": "in19",
-    "name": "Uttarakhand"
+    "name": "Uttarakhand",
+    "prior": 45
    },
    {
     "id": "in20",
-    "name": "Himachal Pradesh"
+    "name": "Himachal Pradesh",
+    "prior": 44
    },
    {
     "id": "in21",
-    "name": "Goa"
+    "name": "Goa",
+    "prior": 43
    },
    {
     "id": "in22",
-    "name": "Assam"
+    "name": "Assam",
+    "prior": 42
    },
    {
     "id": "in23",
-    "name": "Chandigarh"
+    "name": "Chandigarh",
+    "prior": 41
    },
    {
     "id": "in24",
-    "name": "Jammu and Kashmir"
+    "name": "Jammu and Kashmir",
+    "prior": 40
    },
    {
     "id": "in25",
-    "name": "Puducherry"
+    "name": "Puducherry",
+    "prior": 39
    },
    {
     "id": "in26",
-    "name": "Tripura"
+    "name": "Tripura",
+    "prior": 36
    },
    {
     "id": "in27",
-    "name": "Meghalaya"
+    "name": "Meghalaya",
+    "prior": 35
    },
    {
     "id": "in28",
-    "name": "Manipur"
+    "name": "Manipur",
+    "prior": 34
    },
    {
     "id": "in29",
-    "name": "Nagaland"
+    "name": "Nagaland",
+    "prior": 33
    },
    {
     "id": "in30",
-    "name": "Sikkim"
+    "name": "Sikkim",
+    "prior": 32
    },
    {
     "id": "in31",
-    "name": "Mizoram"
+    "name": "Mizoram",
+    "prior": 31
    },
    {
     "id": "in32",
-    "name": "Arunachal Pradesh"
+    "name": "Arunachal Pradesh",
+    "prior": 30
    },
    {
     "id": "in33",
-    "name": "Ladakh"
+    "name": "Ladakh",
+    "prior": 28
    },
    {
     "id": "in34",
-    "name": "Dadra and Nagar Haveli and Daman and Diu"
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "prior": 26
    },
    {
     "id": "in35",
-    "name": "Lakshadweep"
+    "name": "Lakshadweep",
+    "prior": 22
    },
    {
     "id": "in36",
-    "name": "Andaman and Nicobar Islands"
+    "name": "Andaman and Nicobar Islands",
+    "prior": 20
    }
   ]
  },
@@ -548,23 +679,28 @@
   "regions": [
    {
     "id": "41",
-    "name": "Central Region"
+    "name": "Central Region",
+    "prior": 88
    },
    {
     "id": "42",
-    "name": "East Region"
+    "name": "East Region",
+    "prior": 85
    },
    {
     "id": "43",
-    "name": "North Region"
+    "name": "North Region",
+    "prior": 82
    },
    {
     "id": "44",
-    "name": "West Region"
+    "name": "West Region",
+    "prior": 80
    },
    {
     "id": "45",
-    "name": "Northeast Region"
+    "name": "Northeast Region",
+    "prior": 79
    }
   ]
  }

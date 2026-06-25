@@ -62,6 +62,13 @@ export function CorridorExplorer() {
 
   const corridor = CORRIDORS.find(c => c.key === view);
 
+  // Derive top region / count from the live scores so the header + stats always
+  // match the standings (instead of stale hardcoded corridor metadata).
+  const rows = corridor ? scoresFor(corridor.iso) : [];
+  const topRegion = rows[0]?.target_entity_name ?? corridor?.topRegion;
+  const topScore = rows[0]?.score ?? corridor?.topScore;
+  const regionsScored = rows.length || corridor?.regionsScored;
+
   return (
     <div className="flex h-screen bg-navy-950 overflow-hidden">
       <div className="flex-1 flex flex-col overflow-hidden">
@@ -82,7 +89,7 @@ export function CorridorExplorer() {
               <p className="text-navy-400 text-xs md:text-sm mt-0.5 truncate">
                 {view === "world"
                   ? "5 active corridors · click a country to explore"
-                  : `${corridor!.regionsScored} regions scored · top: ${corridor!.topRegion} (${corridor!.topScore})`}
+                  : `${regionsScored} regions scored · top: ${topRegion} (${topScore})`}
               </p>
             </div>
           </div>
@@ -332,8 +339,8 @@ export function CorridorExplorer() {
             {[
               { label: "Students / yr", value: corridor.studentsPerYear, color: "text-white" },
               { label: "Visa approval", value: corridor.visaRate, color: "text-emerald-400" },
-              { label: "Regions scored", value: String(corridor.regionsScored), color: "text-white" },
-              { label: "Top region", value: `${corridor.topRegion} ${corridor.topScore}`, color: "text-gold-400" },
+              { label: "Regions scored", value: String(regionsScored), color: "text-white" },
+              { label: "Top region", value: `${topRegion} ${topScore}`, color: "text-gold-400" },
             ].map(s => (
               <div key={s.label} className="text-center">
                 <div className={`text-sm font-bold ${s.color}`}>{s.value}</div>

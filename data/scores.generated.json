@@ -1,1 +1,5442 @@
-[]
+[
+ {
+  "rank": 1,
+  "score": 76,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "2",
+  "target_entity_name": "Jiangsu",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 88,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.219,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 74,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.111,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 2,
+  "score": 75,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "1",
+  "target_entity_name": "Zhejiang",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 89,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.223,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 89,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.133,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 3,
+  "score": 73,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "3",
+  "target_entity_name": "Fujian",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 84,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.21,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 82,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.123,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 74,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.111,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 4,
+  "score": 72,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "4",
+  "target_entity_name": "Sichuan",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 88,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.22,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 5,
+  "score": 70,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "5",
+  "target_entity_name": "Hubei",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 84,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.209,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 70,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 6,
+  "score": 70,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "6",
+  "target_entity_name": "Hunan",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 85,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.212,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 85,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.127,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 83,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.124,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 7,
+  "score": 68,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "7",
+  "target_entity_name": "Shaanxi",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.194,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 46,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.114,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 8,
+  "score": 68,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "9",
+  "target_entity_name": "Chongqing",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 85,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.212,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 85,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.127,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 75,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.112,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 9,
+  "score": 67,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "13",
+  "target_entity_name": "Inner Mongolia",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 74,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.186,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 73,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.109,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 10,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "8",
+  "target_entity_name": "Shandong",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 75,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.112,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 35,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.089,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 11,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "12",
+  "target_entity_name": "Hebei",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.193,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 42,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 12,
+  "score": 62,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "10",
+  "target_entity_name": "Tianjin",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 87,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.216,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 75,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.112,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 34,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.085,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 13,
+  "score": 62,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "14",
+  "target_entity_name": "Guangdong",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 89,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.223,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 90,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.135,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 80,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.12,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 14,
+  "score": 59,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "11",
+  "target_entity_name": "Liaoning",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 76,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.189,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 46,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.114,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 70,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 15,
+  "score": 58,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "15",
+  "target_entity_name": "Shanxi",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 75,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.187,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 47,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 70,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 16,
+  "score": 58,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "16",
+  "target_entity_name": "Anhui",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 79,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.197,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 42,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.104,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 17,
+  "score": 55,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "18",
+  "target_entity_name": "Henan",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 80,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.199,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 83,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.125,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 71,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.106,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 18,
+  "score": 54,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "19",
+  "target_entity_name": "Guangxi",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.194,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 75,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.112,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 44,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.11,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 19,
+  "score": 53,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "17",
+  "target_entity_name": "Jiangxi",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 78,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.194,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 44,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.11,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.102,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 20,
+  "score": 51,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "21",
+  "target_entity_name": "Heilongjiang",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 73,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.182,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 52,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.131,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 64,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 21,
+  "score": 51,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "23",
+  "target_entity_name": "Yunnan",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 84,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.211,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 81,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.122,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 80,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.12,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 22,
+  "score": 49,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "24",
+  "target_entity_name": "Guizhou",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.192,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 46,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 23,
+  "score": 48,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "22",
+  "target_entity_name": "Jilin",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 75,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.186,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 48,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 69,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 24,
+  "score": 47,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "26",
+  "target_entity_name": "Shanxi",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 75,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.188,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 47,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 69,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.104,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 25,
+  "score": 46,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "25",
+  "target_entity_name": "Ningxia",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 70,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.176,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 55,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.139,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 63,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 26,
+  "score": 45,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "20",
+  "target_entity_name": "Hainan",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker academic readiness signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 81,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.122,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 38,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 27,
+  "score": 45,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "28",
+  "target_entity_name": "Beijing",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 98,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.147,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 28,
+  "score": 44,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "27",
+  "target_entity_name": "Gansu",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.192,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 46,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.115,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 67,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.101,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 29,
+  "score": 40,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "29",
+  "target_entity_name": "Shanghai",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 98,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.245,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 99,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.148,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 30,
+  "score": 38,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "30",
+  "target_entity_name": "Xinjiang",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 84,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.21,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 81,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.121,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 75,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.113,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 31,
+  "score": 35,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "31",
+  "target_entity_name": "Tibet",
+  "target_country_iso": "CHN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 89,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.221,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 89,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.133,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.128,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 1,
+  "score": 75,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "jp3",
+  "target_entity_name": "Tokyo",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 2,
+  "score": 73,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "jp1",
+  "target_entity_name": "Kyoto",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 71,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.178,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 89,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.134,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 88,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.133,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 3,
+  "score": 71,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "jp2",
+  "target_entity_name": "Osaka",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 70,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.176,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 89,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.134,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 82,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.123,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 4,
+  "score": 66,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp4",
+  "target_entity_name": "Kanagawa",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 72,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.108,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.098,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 5,
+  "score": 65,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp5",
+  "target_entity_name": "Saitama",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 77,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.115,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 66,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.099,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 6,
+  "score": 64,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp7",
+  "target_entity_name": "Fukuoka",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 45,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.114,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 74,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.111,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 7,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp6",
+  "target_entity_name": "Aichi",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 70,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 66,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.099,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 38,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 8,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp8",
+  "target_entity_name": "Hiroshima",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 54,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.134,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 81,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.121,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 77,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 9,
+  "score": 61,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp9",
+  "target_entity_name": "Nagoya",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 52,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.13,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 81,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.122,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 73,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.109,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 10,
+  "score": 58,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp12",
+  "target_entity_name": "Nara",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 83,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.124,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 49,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.123,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 11,
+  "score": 56,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp10",
+  "target_entity_name": "Hyogo",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 43,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.108,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.102,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 12,
+  "score": 54,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp11",
+  "target_entity_name": "Shiga",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 43,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.106,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.102,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 13,
+  "score": 52,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp14",
+  "target_entity_name": "Okayama",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Economic Ability-to-Pay is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 69,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 40,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.101,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 63,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 14,
+  "score": 52,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp18",
+  "target_entity_name": "Tokushima",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 60,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.091,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 15,
+  "score": 51,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp13",
+  "target_entity_name": "Wakayama",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 47,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 63,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.094,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 16,
+  "score": 50,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "jp15",
+  "target_entity_name": "Kagawa",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 44,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.111,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 63,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 17,
+  "score": 49,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp16",
+  "target_entity_name": "Ehime",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 48,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 62,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.093,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 18,
+  "score": 49,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp17",
+  "target_entity_name": "Koichi",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 42,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.104,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.097,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 19,
+  "score": 48,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp19",
+  "target_entity_name": "Hokkaido",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker academic readiness signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 84,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.127,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 80,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.121,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 20,
+  "score": 47,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp22",
+  "target_entity_name": "Miyagi",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 70,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 40,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.1,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.098,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 21,
+  "score": 47,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp25",
+  "target_entity_name": "Fukushima",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 69,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 38,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.095,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 22,
+  "score": 47,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp26",
+  "target_entity_name": "Ibaraki",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.193,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.102,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 23,
+  "score": 46,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp20",
+  "target_entity_name": "Aomori",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 46,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.114,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 62,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.093,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 24,
+  "score": 45,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp21",
+  "target_entity_name": "Iwate",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 47,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 58,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.087,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 25,
+  "score": 44,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp24",
+  "target_entity_name": "Yamagata",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 43,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.107,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.097,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 26,
+  "score": 42,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp23",
+  "target_entity_name": "Akita",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker academic readiness signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 36,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.09,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 27,
+  "score": 42,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp28",
+  "target_entity_name": "Gunma",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 47,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 61,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.091,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 28,
+  "score": 42,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp36",
+  "target_entity_name": "Mie",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 88,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.132,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 43,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.108,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 29,
+  "score": 41,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp27",
+  "target_entity_name": "Tochigi",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 48,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.12,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 59,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.089,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 30,
+  "score": 41,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp31",
+  "target_entity_name": "Ishikawa",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 67,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.101,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 31,
+  "score": 40,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp32",
+  "target_entity_name": "Fukui",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 43,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.107,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 66,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.099,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 32,
+  "score": 40,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp34",
+  "target_entity_name": "Nagano",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 67,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.101,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 33,
+  "score": 40,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp37",
+  "target_entity_name": "Yamaguchi",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 82,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.123,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 70,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.105,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 41,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 34,
+  "score": 39,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp29",
+  "target_entity_name": "Niigata",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 40,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.101,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 63,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.094,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 35,
+  "score": 39,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp30",
+  "target_entity_name": "Toyama",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 42,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.104,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 54,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.081,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 36,
+  "score": 39,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp38",
+  "target_entity_name": "Saga",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 60,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.151,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 37,
+  "score": 39,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp39",
+  "target_entity_name": "Nagasaki",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 73,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.11,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 44,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.109,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 38,
+  "score": 38,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp33",
+  "target_entity_name": "Yamanashi",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 47,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 63,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.094,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 39,
+  "score": 38,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp44",
+  "target_entity_name": "Okinawa",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 56,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.139,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 84,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.126,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 84,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.125,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 40,
+  "score": 36,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp35",
+  "target_entity_name": "Gifu",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 44,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.109,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 62,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.093,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 41,
+  "score": 36,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp42",
+  "target_entity_name": "Miyazaki",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 77,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 42,
+  "score": 35,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp40",
+  "target_entity_name": "Kumamoto",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 40,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.1,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 67,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.1,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.098,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 43,
+  "score": 34,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp43",
+  "target_entity_name": "Kagoshima",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 43,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.108,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 66,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.099,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.097,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 44,
+  "score": 31,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp41",
+  "target_entity_name": "Oita",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 45,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.112,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 60,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.089,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 45,
+  "score": 30,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp45",
+  "target_entity_name": "Shimane",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 50,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.126,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 59,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.089,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 46,
+  "score": 29,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp47",
+  "target_entity_name": "Akita",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker economic ability-to-pay signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 72,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.108,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.103,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 47,
+  "score": 28,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "jp46",
+  "target_entity_name": "Tottori",
+  "target_country_iso": "JPN",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 51,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.127,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 95,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.095,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 59,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.089,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 1,
+  "score": 82,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "kr1",
+  "target_entity_name": "Seoul",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 2,
+  "score": 76,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "kr3",
+  "target_entity_name": "Busan",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 94,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.234,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 93,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.14,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 48,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 3,
+  "score": 73,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "kr4",
+  "target_entity_name": "Incheon",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 88,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.219,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 54,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.134,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 88,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.132,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 4,
+  "score": 68,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr2",
+  "target_entity_name": "Gyeonggi",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 62,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.155,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 82,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.123,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 89,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.089,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 5,
+  "score": 65,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr5",
+  "target_entity_name": "Daejeon",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 82,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.204,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 62,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.155,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 89,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.089,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 6,
+  "score": 64,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr8",
+  "target_entity_name": "Ulsan",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.192,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 65,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.163,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 81,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.122,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 7,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr7",
+  "target_entity_name": "Gwangju",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 61,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.153,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 57,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 83,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.124,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 8,
+  "score": 62,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr6",
+  "target_entity_name": "Daegu",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 83,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.207,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 80,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 89,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.089,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 9,
+  "score": 62,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr9",
+  "target_entity_name": "Sejong",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 81,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.202,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 61,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.152,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 84,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.125,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 10,
+  "score": 55,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr10",
+  "target_entity_name": "South Gyeongsang",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 95,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.237,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 58,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.145,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.098,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 11,
+  "score": 54,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr11",
+  "target_entity_name": "North Gyeongsang",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 92,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.23,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 58,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.146,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 66,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.099,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 12,
+  "score": 52,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr14",
+  "target_entity_name": "Gangwon",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 77,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.193,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 70,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.175,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 77,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.115,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 13,
+  "score": 50,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "kr13",
+  "target_entity_name": "North Chungcheong",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 54,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.097,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 14,
+  "score": 49,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "kr17",
+  "target_entity_name": "Jeju",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 88,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.219,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 54,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 90,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 15,
+  "score": 46,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "kr15",
+  "target_entity_name": "North Jeolla",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 95,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.237,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 56,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.14,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 65,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.098,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 16,
+  "score": 45,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "kr16",
+  "target_entity_name": "South Jeolla",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 94,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.236,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 59,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.146,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 67,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.1,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 17,
+  "score": 42,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "kr12",
+  "target_entity_name": "South Chungcheong",
+  "target_country_iso": "KOR",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 54,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.135,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 64,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.096,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 89,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.089,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 1,
+  "score": 80,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in1",
+  "target_entity_name": "Andhra Pradesh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 85,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.214,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 99,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.148,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 2,
+  "score": 77,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in2",
+  "target_entity_name": "Telangana",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 87,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.219,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 91,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.137,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "migration",
+    "factor_label": "Migration Intent",
+    "factor_value": 88,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.088,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 3,
+  "score": 75,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in4",
+  "target_entity_name": "Gujarat",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 92,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.229,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.143,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 4,
+  "score": 75,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in5",
+  "target_entity_name": "Tamil Nadu",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 92,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.23,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 96,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.144,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 5,
+  "score": 74,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in3",
+  "target_entity_name": "Maharashtra",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 93,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.233,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 98,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.146,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 6,
+  "score": 73,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in6",
+  "target_entity_name": "Karnataka",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 92,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.231,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 7,
+  "score": 71,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "in8",
+  "target_entity_name": "Punjab",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 92,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.23,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.143,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 8,
+  "score": 69,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in9",
+  "target_entity_name": "Uttar Pradesh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 91,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.228,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 96,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.144,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 9,
+  "score": 67,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in10",
+  "target_entity_name": "Kerala",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 93,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.232,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 97,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.145,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 10,
+  "score": 66,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in7",
+  "target_entity_name": "Delhi",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 97,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.145,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "migration",
+    "factor_label": "Migration Intent",
+    "factor_value": 100,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.1,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 11,
+  "score": 66,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in11",
+  "target_entity_name": "Haryana",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 90,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.225,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 96,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.144,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 92,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.138,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 12,
+  "score": 65,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in12",
+  "target_entity_name": "West Bengal",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 91,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.226,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 99,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.149,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 13,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in13",
+  "target_entity_name": "Rajasthan",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 92,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.229,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.143,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 14,
+  "score": 61,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in14",
+  "target_entity_name": "Madhya Pradesh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 89,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.222,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 97,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.146,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 93,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.14,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 15,
+  "score": 60,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in15",
+  "target_entity_name": "Bihar",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 91,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.228,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 96,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.144,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 16,
+  "score": 58,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in16",
+  "target_entity_name": "Jharkhand",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 91,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.228,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 90,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 85,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.128,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 17,
+  "score": 56,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in17",
+  "target_entity_name": "Odisha",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 86,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.214,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 91,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 18,
+  "score": 55,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in18",
+  "target_entity_name": "Chhattisgarh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 95,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.237,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 93,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.139,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 68,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.102,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 19,
+  "score": 55,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in19",
+  "target_entity_name": "Uttarakhand",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 87,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.218,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 91,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 20,
+  "score": 55,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in20",
+  "target_entity_name": "Himachal Pradesh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 86,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.215,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 90,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.136,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 21,
+  "score": 55,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in21",
+  "target_entity_name": "Goa",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 96,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.239,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 94,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.141,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 22,
+  "score": 54,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in22",
+  "target_entity_name": "Assam",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 93,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.232,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 93,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.139,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 89,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.133,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 23,
+  "score": 52,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in24",
+  "target_entity_name": "Jammu and Kashmir",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 82,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.204,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 92,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.138,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 88,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.132,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 24,
+  "score": 52,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in25",
+  "target_entity_name": "Puducherry",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 78,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.195,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 88,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.132,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 73,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.109,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 25,
+  "score": 50,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "in26",
+  "target_entity_name": "Tripura",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Student Demand is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 86,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.214,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.119,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 26,
+  "score": 49,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in23",
+  "target_entity_name": "Chandigarh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 91,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.228,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 95,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.142,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "migration",
+    "factor_label": "Migration Intent",
+    "factor_value": 99,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.099,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 27,
+  "score": 48,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in28",
+  "target_entity_name": "Manipur",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 82,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.204,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 28,
+  "score": 47,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in29",
+  "target_entity_name": "Nagaland",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 80,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.2,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 83,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.124,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 77,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 29,
+  "score": 47,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in30",
+  "target_entity_name": "Sikkim",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 84,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.21,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 83,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.125,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 30,
+  "score": 46,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in31",
+  "target_entity_name": "Mizoram",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 79,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.199,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 77,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 31,
+  "score": 46,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in33",
+  "target_entity_name": "Ladakh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 94,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.235,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 93,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.14,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 91,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.137,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 32,
+  "score": 44,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in27",
+  "target_entity_name": "Meghalaya",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 81,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.202,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "migration",
+    "factor_label": "Migration Intent",
+    "factor_value": 90,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.09,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 33,
+  "score": 42,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in34",
+  "target_entity_name": "Dadra and Nagar Haveli and Daman and Diu",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 46,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.116,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 64,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.097,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 34,
+  "score": 41,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in35",
+  "target_entity_name": "Lakshadweep",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker student demand signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 63,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.158,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 63,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.158,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 79,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.118,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 35,
+  "score": 38,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in32",
+  "target_entity_name": "Arunachal Pradesh",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker academic readiness signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 86,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.129,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 85,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.127,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "migration",
+    "factor_label": "Migration Intent",
+    "factor_value": 85,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.085,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 36,
+  "score": 38,
+  "confidence": "low",
+  "target_entity_type": "region",
+  "target_entity_id": "in36",
+  "target_entity_name": "Andaman and Nicobar Islands",
+  "target_country_iso": "IND",
+  "dest_country_iso": "USA",
+  "key_insight": "Limited corridor today. Smaller pipeline and weaker competitive white space signal.",
+  "risk_flag": "Smaller pipeline / weaker signals — lower marginal ROI.",
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 66,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.165,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 61,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.153,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 75,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.112,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 1,
+  "score": 83,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "41",
+  "target_entity_name": "Central Region",
+  "target_country_iso": "SGP",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 100,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.15,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 2,
+  "score": 79,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "42",
+  "target_entity_name": "East Region",
+  "target_country_iso": "SGP",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 97,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.242,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "economic",
+    "factor_label": "Economic Ability-to-Pay",
+    "factor_value": 82,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.123,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 78,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.117,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 3,
+  "score": 76,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "43",
+  "target_entity_name": "North Region",
+  "target_country_iso": "SGP",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by competitive white space. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 100,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.25,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 95,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.238,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 97,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.097,
+    "data_source": "U.S. Dept. of State F-1 data"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 4,
+  "score": 75,
+  "confidence": "high",
+  "target_entity_type": "region",
+  "target_entity_id": "44",
+  "target_entity_name": "West Region",
+  "target_country_iso": "SGP",
+  "dest_country_iso": "USA",
+  "key_insight": "Strong opportunity — led by student demand. Low recruiter saturation relative to demand.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "demand",
+    "factor_label": "Student Demand",
+    "factor_value": 96,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.239,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 48,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.12,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "academic",
+    "factor_label": "Academic Readiness",
+    "factor_value": 71,
+    "factor_weight": 0.15,
+    "shap_contribution": 0.107,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ },
+ {
+  "rank": 5,
+  "score": 63,
+  "confidence": "medium",
+  "target_entity_type": "region",
+  "target_entity_id": "45",
+  "target_entity_name": "Northeast Region",
+  "target_country_iso": "SGP",
+  "dest_country_iso": "USA",
+  "key_insight": "Emerging opportunity. Competitive White Space is the strongest signal; watch competition.",
+  "risk_flag": null,
+  "optimal_visit_window": null,
+  "top_factors": [
+   {
+    "factor_name": "whitespace",
+    "factor_label": "Competitive White Space",
+    "factor_value": 85,
+    "factor_weight": 0.25,
+    "shap_contribution": 0.212,
+    "data_source": "Bright Data (live web)"
+   },
+   {
+    "factor_name": "corridor",
+    "factor_label": "Corridor Strength (visa)",
+    "factor_value": 97,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.097,
+    "data_source": "U.S. Dept. of State F-1 data"
+   },
+   {
+    "factor_name": "migration",
+    "factor_label": "Migration Intent",
+    "factor_value": 74,
+    "factor_weight": 0.1,
+    "shap_contribution": 0.074,
+    "data_source": "Bright Data (live web)"
+   }
+  ],
+  "recommended_schools": []
+ }
+]
