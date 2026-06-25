@@ -279,7 +279,9 @@ export default function LandingPage() {
                 className={`object-cover ${slide.pos} opacity-[0.9]`} />
             </div>
           ))}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#03071e]/50 via-transparent to-[#03071e]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#03071e]/75 via-[#03071e]/45 to-[#03071e]" />
+          {/* Center scrim — keeps the headline readable over bright slides */}
+          <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 55% at center, rgba(3,7,30,0.55) 0%, transparent 75%)" }} />
           {/* current city label */}
           <div className="absolute bottom-8 right-8 hidden md:flex items-center gap-3">
             <span className="h-px w-10 bg-gold-400/50" />
