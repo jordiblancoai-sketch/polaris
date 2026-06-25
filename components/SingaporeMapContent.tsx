@@ -26,7 +26,7 @@ export default function SingaporeMapContent({ onRegionSelect, selectedRegion }: 
   scoresFor("SGP").forEach(s => { scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
 
   return (
-    <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-emerald-950 to-navy-950 rounded-xl overflow-hidden">
+    <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-blue-950 to-navy-950 rounded-xl overflow-hidden">
       {/* Legend */}
       <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 bg-navy-900/90 backdrop-blur-sm rounded-lg p-3 border border-navy-700">
         {[
