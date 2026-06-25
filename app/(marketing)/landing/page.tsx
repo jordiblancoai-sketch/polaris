@@ -238,7 +238,7 @@ export default function LandingPage() {
           <Link href="/landing" aria-label="Polaris home"><Logo size="md" /></Link>
           <div className="hidden md:flex gap-8">
             {[["Free Strategic Plan","/strategic-plan"],["Product","/map"],["Demo","/demo"],["Pricing","#pricing"],["FAQ","#faq"]].map(([l,h]) => (
-              <Link key={l} href={h} target={h.startsWith("#") ? undefined : "_blank"} rel="noopener" className="text-sm font-medium text-gray-600 hover:text-navy-900 transition-colors">{l}</Link>
+              <Link key={l} href={h} className="text-sm font-medium text-gray-600 hover:text-navy-900 transition-colors">{l}</Link>
             ))}
           </div>
           <div className="flex items-center gap-3">
