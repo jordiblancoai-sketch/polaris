@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { FAQS } from "@/lib/faq";
+import { LANDING_FAQS as FAQS } from "@/lib/faq";
 
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);

@@ -13,18 +13,27 @@ export function ChatWidget() {
   const [mode, setMode] = useState<Mode>("chat");
   const [msgs, setMsgs] = useState<Msg[]>([{ role: "bot", text: GREETING }]);
   const [asked, setAsked] = useState<number[]>([]);
+  const [typing, setTyping] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sending, setSending] = useState(false);
   const threadRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     threadRef.current?.scrollTo({ top: threadRef.current.scrollHeight, behavior: "smooth" });
-  }, [msgs, mode]);
+  }, [msgs, mode, typing]);
 
   function askFaq(i: number) {
+    if (typing) return;
     const f = FAQS[i];
     setAsked(a => [...a, i]);
-    setMsgs(m => [...m, { role: "user", text: f.q }, { role: "bot", text: f.a }]);
+    setMsgs(m => [...m, { role: "user", text: f.q }]);
+    setTyping(true);
+    // Pause like a real person reading + typing (≈1–2.5s, scaled to answer length).
+    const delay = Math.min(2500, 900 + f.a.length * 7);
+    setTimeout(() => {
+      setMsgs(m => [...m, { role: "bot", text: f.a }]);
+      setTyping(false);
+    }, delay);
   }
 
   async function submit(e: React.FormEvent) {
@@ -55,7 +64,7 @@ export function ChatWidget() {
           className="fixed bottom-24 right-5 z-50 w-[calc(100vw-2.5rem)] sm:w-[380px] max-h-[min(620px,75vh)] flex flex-col rounded-2xl overflow-hidden border border-navy-700 bg-navy-950 shadow-2xl shadow-black/50"
           style={{ animation: "chatIn .18s cubic-bezier(.22,1,.36,1)" }}
         >
-          <style>{`@keyframes chatIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}`}</style>
+          <style>{`@keyframes chatIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}.typing-dot{width:6px;height:6px;border-radius:9999px;background:#98afd9;display:inline-block;animation:typingBounce 1s infinite ease-in-out}@keyframes typingBounce{0%,80%,100%{transform:translateY(0);opacity:.4}40%{transform:translateY(-4px);opacity:1}}`}</style>
 
           {/* Header */}
           <div className="relative px-4 py-4 bg-gradient-to-br from-navy-900 to-navy-800 border-b border-navy-700">
@@ -120,14 +129,23 @@ export function ChatWidget() {
                     }`}>{m.text}</div>
                   </div>
                 ))}
+                {typing && (
+                  <div className="flex justify-start">
+                    <div className="bg-navy-800 rounded-2xl rounded-bl-sm px-3.5 py-3 flex items-center gap-1">
+                      <span className="typing-dot" />
+                      <span className="typing-dot" style={{ animationDelay: ".15s" }} />
+                      <span className="typing-dot" style={{ animationDelay: ".3s" }} />
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Quick FAQ chips */}
               {remaining.length > 0 && (
                 <div className="px-4 pb-2 flex flex-wrap gap-1.5">
                   {remaining.slice(0, 4).map(i => (
-                    <button key={i} onClick={() => askFaq(i)}
-                      className="text-[11px] text-gold-400 border border-gold-400/30 hover:border-gold-400/70 hover:bg-gold-400/10 rounded-full px-2.5 py-1 transition-colors text-left">
+                    <button key={i} onClick={() => askFaq(i)} disabled={typing}
+                      className="text-[11px] text-gold-400 border border-gold-400/30 hover:border-gold-400/70 hover:bg-gold-400/10 rounded-full px-2.5 py-1 transition-colors text-left disabled:opacity-40 disabled:cursor-not-allowed">
                       {FAQS[i].q}
                     </button>
                   ))}
