@@ -16,7 +16,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     q: "How often is the data updated?",
-    a: "Scores are recomputed nightly. As visa policy, economic conditions and competitor activity shift through the recruiting cycle, your map stays current — so you're never planning a trip on last year's assumptions.",
+    a: "Scores are recomputed weekly. As visa policy, economic conditions and competitor activity shift through the recruiting cycle, your map stays current — so you're never planning a trip on last year's assumptions.",
   },
   {
     q: "Which corridors are covered?",

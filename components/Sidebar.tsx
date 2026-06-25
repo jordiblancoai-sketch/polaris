@@ -74,7 +74,7 @@ export function Sidebar() {
             <span className="text-[10px] text-navy-400">Live</span>
           </div>
         </div>
-        <div className="text-[10px] text-navy-500 mt-1">31 regions scored · Updated daily</div>
+        <div className="text-[10px] text-navy-500 mt-1">136 regions scored · Updated weekly</div>
       </div>
     </aside>
   );

@@ -21,6 +21,22 @@ const CORRIDORS = [
     stats: { regions: 47, students: "18.9k", visa: "95%" },
   },
   {
+    flags: "🇰🇷 → 🇺🇸",
+    name: "South Korea → United States",
+    detail: "17 regions scored · All programs",
+    active: true,
+    locked: false,
+    stats: { regions: 17, students: "43.8k", visa: "89%" },
+  },
+  {
+    flags: "🇮🇳 → 🇺🇸",
+    name: "India → United States",
+    detail: "36 states scored · Graduate focus",
+    active: true,
+    locked: false,
+    stats: { regions: 36, students: "331k", visa: "80%" },
+  },
+  {
     flags: "🇸🇬 → 🇺🇸",
     name: "Singapore → United States",
     detail: "5 planning regions · All programs",
@@ -80,7 +96,7 @@ export default function SettingsPage() {
               <h2 className="font-semibold text-gray-900">Active Corridors</h2>
             </div>
             <span className="text-xs bg-navy-50 text-navy-700 border border-navy-100 px-2 py-0.5 rounded-full font-medium">
-              Professional — 3 corridors
+              Professional — {CORRIDORS.length} corridors
             </span>
           </div>
           <div className="space-y-3">
@@ -112,7 +128,7 @@ export default function SettingsPage() {
                 </div>
               </div>
             ))}
-            <button onClick={() => alert("Contact your account manager to add a corridor — sales@polaris.io")}
+            <button onClick={() => alert("Contact your account manager to add a corridor — sales@polarisuni.com")}
               className="w-full py-2.5 border-2 border-dashed border-gray-200 rounded-xl text-sm text-gray-400 hover:border-navy-300 hover:text-navy-600 transition-colors">
               + Add corridor — upgrade to Enterprise
             </button>
@@ -143,7 +159,7 @@ export default function SettingsPage() {
                 </ul>
                 {tier.current
                   ? <div className="mt-3 text-xs font-medium text-navy-700 bg-navy-100 rounded-md py-1.5 text-center">Current plan</div>
-                  : <button onClick={() => alert(`${tier.name} plan — our team will reach out. Contact: sales@polaris.io`)}
+                  : <button onClick={() => alert(`${tier.name} plan — our team will reach out. Contact: sales@polarisuni.com`)}
                       className="mt-3 w-full text-xs font-medium text-white bg-navy-800 hover:bg-navy-900 rounded-md py-1.5 transition-colors">
                       {tier.name === "Enterprise" ? "Contact us" : "Upgrade"}
                     </button>

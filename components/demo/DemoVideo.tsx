@@ -70,7 +70,7 @@ const SCENES = [
     id: "map",
     duration: 5000,
     title: "31 Chinese provinces. Scored.",
-    subtitle: "Every province ranked by probability of enrollment yield — updated nightly.",
+    subtitle: "Every province ranked by probability of enrollment yield — updated weekly.",
   },
   {
     id: "insight",
@@ -87,7 +87,7 @@ const SCENES = [
   {
     id: "corridors",
     duration: 5000,
-    title: "Japan and Singapore. Same precision.",
+    title: "Japan, Korea, India and Singapore. Same precision.",
     subtitle: "47 prefectures + 5 regions scored — high-approval markets most US universities ignore.",
   },
   {
@@ -99,8 +99,8 @@ const SCENES = [
   {
     id: "result",
     duration: 4000,
-    title: "Three corridors. Zero guesswork.",
-    subtitle: "China, Japan, Singapore — all scored. All transparent. All live.",
+    title: "Five corridors. Zero guesswork.",
+    subtitle: "China, Japan, Korea, India and Singapore — all scored. All transparent. All live.",
   },
 ];
 
@@ -650,7 +650,7 @@ export function DemoVideo({ corridor = "china" }: { corridor?: string }) {
         </div>
         <div className="flex-1 mx-4">
           <div className="bg-white/10 rounded-md h-5 flex items-center px-3 max-w-xs mx-auto">
-            <span className="text-white/40 text-[10px]">🔒 app.polaris.io/map</span>
+            <span className="text-white/40 text-[10px]">🔒 app.polarisuni.com/map</span>
           </div>
         </div>
         <div className="text-white/20 text-[10px]">Polaris</div>
@@ -702,7 +702,7 @@ export function DemoVideo({ corridor = "china" }: { corridor?: string }) {
           </div>
           <div className="text-white/60 text-xs mt-0.5">
             {scene.id === "map"
-              ? "Every region ranked by probability of enrollment yield — updated nightly."
+              ? "Every region ranked by probability of enrollment yield — updated weekly."
               : scene.subtitle}
           </div>
         </motion.div>

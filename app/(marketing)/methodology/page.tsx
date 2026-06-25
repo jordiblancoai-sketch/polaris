@@ -12,7 +12,7 @@ const SOURCES = [
   { name: "China National Bureau of Statistics", url: "http://www.stats.gov.cn", external: true, feeds: "Province-level demographics, school counts, graduating cohorts.", cadence: "Annual" },
   { name: "Japan e-Stat / MEXT", url: "https://www.e-stat.go.jp", external: true, feeds: "Prefecture-level demographics and education statistics.", cadence: "Annual" },
   { name: "Singapore MOE / SingStat", url: "https://www.singstat.gov.sg", external: true, feeds: "Planning-region demographics, A-level cohorts, school directories.", cadence: "Annual" },
-  { name: "Polaris field scan", url: null, external: false, feeds: "Competitor recruiting presence, school-fair calendars, partner-school activity. Compiled from public recruiting pages, fair registrations and counselor networks.", cadence: "Refreshed nightly" },
+  { name: "Polaris field scan", url: null, external: false, feeds: "Competitor recruiting presence, school-fair calendars, partner-school activity. Compiled from public recruiting pages, fair registrations and counselor networks.", cadence: "Refreshed weekly" },
 ];
 
 const FACTORS = [
@@ -73,7 +73,7 @@ export default function MethodologyPage() {
             ))}
           </div>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Scores are recomputed nightly. Each region also carries a <strong>confidence rating</strong>
+            Scores are recomputed weekly. Each region also carries a <strong>confidence rating</strong>
             (high / medium / low) reflecting data freshness and coverage — regions relying on older or
             sparser inputs are flagged rather than silently scored.
           </p>

@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           </section>
           <section>
             <h2 className="font-bold text-navy-900 mb-2">5. Your rights</h2>
-            <p>You may request access, correction or deletion of your account data at any time by emailing <a href="mailto:privacy@polaris.io" className="text-navy-700 underline">privacy@polaris.io</a>.</p>
+            <p>You may request access, correction or deletion of your account data at any time by emailing <a href="mailto:privacy@polarisuni.com" className="text-navy-700 underline">privacy@polarisuni.com</a>.</p>
           </section>
           <section>
             <h2 className="font-bold text-navy-900 mb-2">6. Contact</h2>

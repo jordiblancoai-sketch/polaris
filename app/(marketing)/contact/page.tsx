@@ -79,7 +79,7 @@ export default function ContactPage() {
                 )}
               </button>
             </form>
-            <p className="text-center text-navy-600 text-xs mt-5">Or email us directly at <a href="mailto:hello@polaris.io" className="text-gold-400">hello@polaris.io</a></p>
+            <p className="text-center text-navy-600 text-xs mt-5">Or email us directly at <a href="mailto:hello@polarisuni.com" className="text-gold-400">hello@polarisuni.com</a></p>
           </>
         )}
       </div>

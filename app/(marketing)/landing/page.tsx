@@ -321,7 +321,7 @@ export default function LandingPage() {
 
           <motion.div variants={s(0.28)} initial="hidden" animate="visible"
             className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-            {[{ t: 277, suf: "k+", l: "students in US from Asia" }, { t: 95, suf: "%+", l: "visa approval — Japan & Singapore" }, { t: 414, pre: "$", l: "avg cost / enrollment" }, { t: 83, l: "regions scored" }].map(x => (
+            {[{ t: 277, suf: "k+", l: "students in US from Asia" }, { t: 95, suf: "%+", l: "visa approval — Japan & Singapore" }, { t: 414, pre: "$", l: "avg cost / enrollment" }, { t: 136, l: "regions scored" }].map(x => (
               <div key={x.l} className="text-center">
                 <div className="text-2xl md:text-3xl font-black text-white tabular-nums">
                   <CountUp target={x.t} active duration={1800} prefix={x.pre || ""} suffix={x.suf || ""} />
@@ -345,7 +345,7 @@ export default function LandingPage() {
       <div className="bg-[#03071e] border-y border-white/5 py-4 overflow-hidden">
         <div className="marquee flex items-center gap-14">
           {Array.from({ length: 2 }).flatMap((_, dup) =>
-            ["TOKYO", "★", "SHANGHAI", "★", "SINGAPORE", "★", "83 REGIONS SCORED", "★", "277K STUDENTS / YR", "★", "UPDATED NIGHTLY", "★", "ZERO GUESSWORK", "★"].map((t, i) => (
+            ["TOKYO", "★", "SHANGHAI", "★", "SINGAPORE", "★", "136 REGIONS SCORED", "★", "277K STUDENTS / YR", "★", "UPDATED WEEKLY", "★", "ZERO GUESSWORK", "★"].map((t, i) => (
               <span key={`${dup}-${i}`} className={t === "★" ? "text-gold-400/60 text-[9px]" : "text-white/35 text-xs font-semibold tracking-[0.35em]"}>{t}</span>
             ))
           )}
@@ -355,8 +355,9 @@ export default function LandingPage() {
       {/* THREE CITIES — luxury full-bleed showcase */}
       <section className="bg-[#03071e] py-0">
         <div className="text-center pt-20 pb-12 px-6">
-          <span className="text-gold-400 text-[11px] font-medium tracking-[0.35em] uppercase">Three corridors. One platform.</span>
+          <span className="text-gold-400 text-[11px] font-medium tracking-[0.35em] uppercase">Five corridors. One platform.</span>
           <h2 className="text-4xl md:text-6xl font-black text-white mt-4">Where your next students live.</h2>
+          <p className="text-white/50 text-sm mt-4">🇨🇳 China · 🇯🇵 Japan · 🇰🇷 South Korea · 🇮🇳 India · 🇸🇬 Singapore — all live, all scored.</p>
         </div>
         <div className="flex flex-col md:flex-row h-auto md:h-[80vh]">
           {[
@@ -479,7 +480,7 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <div className="text-white font-bold">Ranked Opportunity Map</div>
-                  <div className="text-navy-400 text-xs">31 Chinese provinces, scored nightly</div>
+                  <div className="text-navy-400 text-xs">31 Chinese provinces, scored weekly</div>
                 </div>
               </div>
               {[
@@ -573,7 +574,7 @@ export default function LandingPage() {
               <div className="md:w-1/3 mb-8 md:mb-0">
                 <h3 className="text-2xl font-black text-white mb-3">How the score works</h3>
                 <p className="text-navy-300 text-sm leading-relaxed">
-                  Six weighted factors, normalized to 0–100 per region, recomputed nightly.
+                  Six weighted factors, normalized to 0–100 per region, recomputed weekly.
                   Each region also carries a confidence rating based on data freshness and coverage.
                 </p>
               </div>

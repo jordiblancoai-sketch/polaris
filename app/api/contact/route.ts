@@ -28,8 +28,8 @@ export async function POST(req: NextRequest) {
           Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         },
         body: JSON.stringify({
-          from: "Polaris <hello@polaris.io>",
-          to: "hello@polaris.io",
+          from: "Polaris <hello@polarisuni.com>",
+          to: "hello@polarisuni.com",
           replyTo: email,
           subject: `${source === "chat" ? "Chat message" : "Demo Request"}: ${name}${institution ? ` from ${institution}` : ""}`,
           html: `
