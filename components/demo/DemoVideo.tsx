@@ -579,6 +579,13 @@ export function DemoVideo({ corridor = "china" }: { corridor?: string }) {
   const intervalRef             = useRef<NodeJS.Timeout | null>(null);
   const audioRef                = useRef<HTMLAudioElement>(null);
 
+  // Warm the map data the demo will show, so the map scene isn't slow.
+  useEffect(() => {
+    ["china", "japan", "singapore"].forEach(c => {
+      fetch(`/geo/${c}.json`).catch(() => {});
+    });
+  }, []);
+
   // Reset scene when corridor changes
   useEffect(() => {
     setSceneIdx(0);

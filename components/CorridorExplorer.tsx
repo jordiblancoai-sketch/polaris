@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { CORRIDORS, RankedOpportunity, CorridorSummary } from "@/lib/types";
 import { scoresFor } from "@/lib/scores";
@@ -33,6 +33,21 @@ function RegionCard({ r, onClick }: { r: RankedOpportunity; onClick: () => void 
 export function CorridorExplorer() {
   const [view, setView] = useState<View>("world");
   const [selected, setSelected] = useState<RankedOpportunity | null>(null);
+
+  // Warm both the GeoJSON data AND the map component JS chunks up front, so
+  // switching corridors is instant instead of paying a cold fetch + code-load
+  // on each click.
+  useEffect(() => {
+    ["china", "japan", "korea", "india", "singapore"].forEach(c => {
+      fetch(`/geo/${c}.json`).catch(() => {});
+    });
+    // Preload the dynamically-imported map chunks in the background.
+    import("@/components/MapContent").catch(() => {});
+    import("@/components/JapanMapContent").catch(() => {});
+    import("@/components/SingaporeMapContent").catch(() => {});
+    import("@/components/KoreaMapContent").catch(() => {});
+    import("@/components/IndiaMapContent").catch(() => {});
+  }, []);
 
   const corridor = CORRIDORS.find(c => c.key === view);
 
