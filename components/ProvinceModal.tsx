@@ -200,8 +200,8 @@ export function ProvinceModal({ region, corridorLabel, totalRegions, onClose }: 
               </div>
             )}
 
-            {tab === "playbook" && <EngagementPlaybook provinceName={region.target_entity_name} score={region.score} />}
-            {tab === "competitive" && <CompetitiveIntelPanel provinceName={region.target_entity_name} score={region.score} />}
+            {tab === "playbook" && <EngagementPlaybook provinceName={region.target_entity_name} score={region.score} countryIso={region.target_country_iso} />}
+            {tab === "competitive" && <CompetitiveIntelPanel provinceName={region.target_entity_name} score={region.score} countryIso={region.target_country_iso} />}
             {tab === "timing" && <TimingHeatmap provinceName={region.target_entity_name} score={region.score} iso={region.target_country_iso} corridorName={corridorName} />}
           </div>
 

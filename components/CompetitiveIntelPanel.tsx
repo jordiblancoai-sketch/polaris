@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { scoresFor } from "@/lib/scores";
 import {
   Target,
   ShieldAlert,
@@ -331,14 +332,27 @@ function tierBadge(tier: UniversityTier): string {
   return                          "bg-gray-100 text-gray-500";
 }
 
-function getDefaultData(score: number): ProvinceCompetitiveData {
-  const ws = Math.max(5, Math.min(95, 100 - score));
+// The saturated "everyone recruits here" hub per corridor, so an India region
+// isn't compared against Beijing.
+const SATURATED_HUB: Record<string, { name: string; count: number }> = {
+  CHN: { name: "Beijing", count: 380 },
+  JPN: { name: "Tokyo", count: 210 },
+  KOR: { name: "Seoul", count: 190 },
+  IND: { name: "Delhi & Mumbai", count: 240 },
+  SGP: { name: "the central core", count: 110 },
+};
+
+function getDefaultData(score: number, countryIso?: string): ProvinceCompetitiveData {
+  // White space tracks opportunity: a high-scoring region has MORE open space
+  // (fewer competitors), so it shouldn't read as "saturated".
+  const ws = Math.max(5, Math.min(95, score));
   const totalPresent = Math.round(ws < 30 ? 200 + (30 - ws) * 6 : ws < 60 ? 120 - ws : 5 + (100 - ws));
+  const hub = SATURATED_HUB[countryIso ?? ""] ?? { name: "the capital", count: 200 };
   return {
     whiteSpaceScore: ws,
     totalUSUnisRecruiting: totalPresent,
-    saturatedComparatorCount: 380,
-    saturatedComparatorName: "Beijing",
+    saturatedComparatorCount: hub.count,
+    saturatedComparatorName: hub.name,
     monthsBeforeSaturation: Math.round(12 + ws / 10),
     competitors: [
       { name: "USC",      tier: "R1 Elite", activity: "medium" },
@@ -346,7 +360,7 @@ function getDefaultData(score: number): ProvinceCompetitiveData {
       { name: "ASU",      tier: "R2",       activity: "medium" },
     ],
     notPresent: ws > 60 ? ["Harvard", "Stanford", "MIT", "Columbia", "Cornell", "Yale", "CMU", "UCLA"] : [],
-    notPresentNote: ws > 60 ? "Several top-ranked US universities recruit in Beijing but have no presence in this province." : undefined,
+    notPresentNote: ws > 60 ? `Several top-ranked US universities recruit in ${hub.name} but have no presence in this region.` : undefined,
   };
 }
 
@@ -481,15 +495,31 @@ function ComparisonTooltip({ active, payload }: { active?: boolean; payload?: Ch
 interface Props {
   provinceName: string;
   score: number;
+  countryIso?: string;
 }
 
-export default function CompetitiveIntelPanel({ provinceName, score }: Props) {
-  const data = PROVINCE_DATA[provinceName] ?? getDefaultData(score);
+export default function CompetitiveIntelPanel({ provinceName, score, countryIso }: Props) {
+  const data = PROVINCE_DATA[provinceName] ?? getDefaultData(score, countryIso);
   const ws = data.whiteSpaceScore;
-  const chartData = COMPARISON_CHART_DATA.map(d => ({
-    ...d,
-    isActive: d.province === provinceName,
-  }));
+  // Build the comparison chart from THIS corridor's own regions (live scores),
+  // so an India region is compared against Indian regions — not Chinese ones.
+  const corridorRows = scoresFor(countryIso || "");
+  let chartData;
+  if (corridorRows.length) {
+    const all = corridorRows.map(rr => ({
+      province: rr.target_entity_name,
+      whiteSpace: rr.score,
+      competitors: Math.max(5, Math.round(Math.pow(100 - rr.score, 1.6) / 5)),
+      isActive: rr.target_entity_name === provinceName,
+    }));
+    chartData = all.slice(0, 8);
+    if (!chartData.some(x => x.isActive)) {
+      const act = all.find(x => x.isActive);
+      if (act) chartData = [...all.slice(0, 7), act];
+    }
+  } else {
+    chartData = COMPARISON_CHART_DATA.map(d => ({ ...d, isActive: d.province === provinceName }));
+  }
 
   return (
     <div className="space-y-5">
@@ -512,7 +542,7 @@ export default function CompetitiveIntelPanel({ provinceName, score }: Props) {
             <>
               {" "}You have an estimated{" "}
               <span className="font-bold text-emerald-400">{data.monthsBeforeSaturation}-month window</span>{" "}
-              before this market becomes saturated like Guangdong.
+              before this market becomes as saturated as {data.saturatedComparatorName}.
             </>
           )}
           {data.monthsBeforeSaturation === 0 && (

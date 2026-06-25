@@ -93,7 +93,7 @@ export function ScoreBreakdownPanel({ opp, onClose }: Props) {
 
       <div className="px-6 py-5 space-y-6">
       {tab === "engagement" && (
-        <EngagementPlaybook provinceName={opp.target_entity_name} score={opp.score} />
+        <EngagementPlaybook provinceName={opp.target_entity_name} score={opp.score} countryIso={opp.target_country_iso} />
       )}
       {tab === "competitive" && (
         <CompetitiveIntelPanel provinceName={opp.target_entity_name} score={opp.score} />

@@ -123,31 +123,46 @@ const PLAYBOOKS: Record<string, {
 // Default playbook for provinces without specific data
 };
 
-function getDefaultPlaybook(provinceName: string, score: number) {
+// Per-corridor cultural/language context for the default family session,
+// so an India region never shows China-specific (Mandarin/Chinese) copy.
+const CORRIDOR_CTX: Record<string, { family: string; action: string }> = {
+  CHN: { family: "Family involvement is high in Chinese markets. Sessions with Mandarin-speaking staff convert well.", action: "Book venue 6 weeks out. Prepare simplified Chinese materials." },
+  JPN: { family: "Japanese families weigh institutional trust and peer outcomes heavily. Japanese-language support and alumni proof points convert well.", action: "Book venue 6 weeks out. Prepare Japanese-language materials and graduate-outcome data." },
+  KOR: { family: "Korean families are outcomes-driven and largely English-comfortable. Lead with placement data; Korean-language parent handouts help.", action: "Book venue 6 weeks out. Prepare Korean-language parent materials." },
+  IND: { family: "Indian families are highly engaged and English-proficient. Lead with ROI, scholarships and visa-success rates.", action: "Book venue 6 weeks out. Prepare English materials with clear cost and visa guidance." },
+  SGP: { family: "Singaporean families are rankings- and outcomes-driven (English throughout). Lead with graduate outcomes rather than scholarships.", action: "Book venue 4 weeks out. Lead with rankings and graduate-outcome data." },
+};
+
+function getDefaultPlaybook(provinceName: string, score: number, countryIso?: string) {
   const coldVisit = score >= 70 ? 3.0 : score >= 60 ? 2.0 : 1.5;
+  const ctx = CORRIDOR_CTX[countryIso ?? ""] ?? {
+    family: "Family involvement is high in this market. Provide local-language support and clear outcome data.",
+    action: "Book venue 6 weeks out. Prepare local-language materials and outcome data.",
+  };
   return {
     executiveSummary: `${provinceName} scores ${score}/100. Scholarship events and family sessions are the recommended starting formats for this corridor.`,
     projectedWithStrategy: coldVisit * 2.5, projectedColdVisit: coldVisit, liftMultiplier: 2.5,
     assetsInRegion: [],
     recommendations: [
-      { formatName: "Scholarship Announcement Event", conversionLift: 2.5, effectivenessScore: 80, resourceIntensity: "low", leadTimeDays: 14, reason: "Cost-effective first engagement for most inland/mid-tier provinces.", action: "Create a province-specific scholarship. Announce 2 weeks before your visit.", timing: "September–October", partnerOpportunities: [], universityAssetLeveraged: null, projectedEnrolled: coldVisit * 2.5 },
-      { formatName: "Family Information Session", conversionLift: 2.1, effectivenessScore: 75, resourceIntensity: "medium", leadTimeDays: 30, reason: "Family involvement is high across all Chinese markets. Sessions with Mandarin-speaking staff convert well.", action: "Book venue 6 weeks out. Prepare simplified Chinese materials.", timing: "October–November", partnerOpportunities: [], universityAssetLeveraged: null, projectedEnrolled: coldVisit * 2.0 },
+      { formatName: "Scholarship Announcement Event", conversionLift: 2.5, effectivenessScore: 80, resourceIntensity: "low", leadTimeDays: 14, reason: "Cost-effective first engagement for most mid-tier regions.", action: "Create a region-specific scholarship. Announce 2 weeks before your visit.", timing: "September–October", partnerOpportunities: [], universityAssetLeveraged: null, projectedEnrolled: coldVisit * 2.5 },
+      { formatName: "Family Information Session", conversionLift: 2.1, effectivenessScore: 75, resourceIntensity: "medium", leadTimeDays: 30, reason: ctx.family, action: ctx.action, timing: "October–November", partnerOpportunities: [], universityAssetLeveraged: null, projectedEnrolled: coldVisit * 2.0 },
     ],
     avoid: [],
   };
 }
 
-export function getPlaybook(provinceName: string, score: number) {
-  return PLAYBOOKS[provinceName] || getDefaultPlaybook(provinceName, score);
+export function getPlaybook(provinceName: string, score: number, countryIso?: string) {
+  return PLAYBOOKS[provinceName] || getDefaultPlaybook(provinceName, score, countryIso);
 }
 
 interface Props {
   provinceName: string;
   score: number;
+  countryIso?: string;
 }
 
-export function EngagementPlaybook({ provinceName, score }: Props) {
-  const playbook = PLAYBOOKS[provinceName] || getDefaultPlaybook(provinceName, score);
+export function EngagementPlaybook({ provinceName, score, countryIso }: Props) {
+  const playbook = PLAYBOOKS[provinceName] || getDefaultPlaybook(provinceName, score, countryIso);
 
   return (
     <div className="space-y-4">

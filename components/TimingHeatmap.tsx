@@ -82,7 +82,37 @@ const MONTH_DATA_SGP: MonthData[] = [
   { month: "Dec", monthFull: "December",  score: 50, label: "GOOD",    keyEvents: ["Post-exam period", "Holiday-season planning"] },
 ];
 
-const MONTHS_BY_ISO: Record<string, MonthData[]> = { CHN: MONTH_DATA, JPN: MONTH_DATA_JPN, SGP: MONTH_DATA_SGP };
+const MONTH_DATA_KOR: MonthData[] = [
+  { month: "Jan", monthFull: "January",   score: 55, label: "GOOD",    keyEvents: ["Post-Suneung decision window", "Winter break — families planning study abroad"] },
+  { month: "Feb", monthFull: "February",  score: 48, label: "NEUTRAL", keyEvents: ["School year ending", "Graduation season"] },
+  { month: "Mar", monthFull: "March",     score: 62, label: "GOOD",    keyEvents: ["New academic year begins", "Fresh student cohort, fair season opens"] },
+  { month: "Apr", monthFull: "April",     score: 58, label: "GOOD",    keyEvents: ["Settled term", "Counsellor engagement strong"] },
+  { month: "May", monthFull: "May",       score: 52, label: "GOOD",    keyEvents: ["Mid-term period", "Family info-session window"] },
+  { month: "Jun", monthFull: "June",      score: 45, label: "NEUTRAL", keyEvents: ["Mid-year exams", "Summer planning begins"] },
+  { month: "Jul", monthFull: "July",      score: 60, label: "GOOD",    keyEvents: ["Summer break — study-abroad fairs", "Test prep (TOEFL/SAT) peaks"] },
+  { month: "Aug", monthFull: "August",    score: 64, label: "GOOD",    keyEvents: ["US application season ramps up", "Building school lists"] },
+  { month: "Sep", monthFull: "September", score: 88, label: "PEAK",    keyEvents: ["Autumn fair circuit", "EA/ED prep — ideal visit window"] },
+  { month: "Oct", monthFull: "October",   score: 82, label: "PEAK",    keyEvents: ["Fairs continue", "ED1 deadline approaching (Nov 1)"] },
+  { month: "Nov", monthFull: "November",  score: 20, label: "AVOID",   keyEvents: ["Suneung (CSAT) mid-Nov — students & families fully unavailable", "Avoid entirely around exam date"] },
+  { month: "Dec", monthFull: "December",  score: 70, label: "GOOD",    keyEvents: ["Post-Suneung — students free, big decision period", "University application surge"] },
+];
+
+const MONTH_DATA_IND: MonthData[] = [
+  { month: "Jan", monthFull: "January",   score: 45, label: "NEUTRAL", keyEvents: ["US Regular Decision deadlines", "Families reviewing offers"] },
+  { month: "Feb", monthFull: "February",  score: 35, label: "AVOID",   keyEvents: ["Board exams begin (CBSE/ICSE/State)", "Students fully focused on exams"] },
+  { month: "Mar", monthFull: "March",     score: 38, label: "AVOID",   keyEvents: ["Board exams ongoing", "Limited family availability"] },
+  { month: "Apr", monthFull: "April",     score: 62, label: "GOOD",    keyEvents: ["Exams ending, results season begins", "US admit decisions releasing"] },
+  { month: "May", monthFull: "May",       score: 85, label: "PEAK",    keyEvents: ["Board results out", "F-1 visa season opens for Fall intake", "Families finalizing US plans"] },
+  { month: "Jun", monthFull: "June",      score: 92, label: "PEAK",    keyEvents: ["Peak F-1 visa interview season", "Pre-departure orientations — maximum engagement"] },
+  { month: "Jul", monthFull: "July",      score: 70, label: "GOOD",    keyEvents: ["Late visa & pre-departure", "Next-cycle families start planning"] },
+  { month: "Aug", monthFull: "August",    score: 58, label: "GOOD",    keyEvents: ["Fall departures", "New application cycle begins"] },
+  { month: "Sep", monthFull: "September", score: 75, label: "GOOD",    keyEvents: ["Test season (GRE/IELTS/TOEFL)", "Application list-building"] },
+  { month: "Oct", monthFull: "October",   score: 88, label: "PEAK",    keyEvents: ["Education fair circuit in full swing", "ED/EA deadlines — ideal visit window"] },
+  { month: "Nov", monthFull: "November",  score: 80, label: "PEAK",    keyEvents: ["Fairs continue", "Applications being finalized"] },
+  { month: "Dec", monthFull: "December",  score: 50, label: "NEUTRAL", keyEvents: ["Half-yearly exams + holidays", "RD deadline prep"] },
+];
+
+const MONTHS_BY_ISO: Record<string, MonthData[]> = { CHN: MONTH_DATA, JPN: MONTH_DATA_JPN, SGP: MONTH_DATA_SGP, KOR: MONTH_DATA_KOR, IND: MONTH_DATA_IND };
 function monthsFor(iso?: string): MonthData[] { return MONTHS_BY_ISO[iso || "CHN"] || MONTH_DATA; }
 
 // ─── School fairs data ────────────────────────────────────────────────────────
