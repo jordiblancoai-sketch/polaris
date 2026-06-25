@@ -1,10 +1,10 @@
-import { TawkChat } from "@/components/TawkChat";
+import { ChatWidget } from "@/components/ChatWidget";
 
 export default function MarketingLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       {children}
-      <TawkChat />
+      <ChatWidget />
     </>
   );
 }

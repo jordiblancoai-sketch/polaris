@@ -1,19 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const { name, email, institution, interestedIn } = await req.json();
+  const { name, email, institution, interestedIn, message, source } = await req.json();
 
   if (!name || !email) {
     return NextResponse.json({ error: "Name and email are required" }, { status: 400 });
   }
 
   // Log to console for immediate visibility
-  console.log("📧 DEMO REQUEST SUBMISSION:", {
+  console.log("📧 LEAD SUBMISSION:", {
     timestamp: new Date().toISOString(),
+    source: source || "contact",
     name,
     email,
     institution,
     interestedIn,
+    message,
   });
 
   // Send to email service (Resend)
@@ -29,13 +31,14 @@ export async function POST(req: NextRequest) {
           from: "Polaris <hello@polaris.io>",
           to: "hello@polaris.io",
           replyTo: email,
-          subject: `Demo Request: ${name} from ${institution || "N/A"}`,
+          subject: `${source === "chat" ? "Chat message" : "Demo Request"}: ${name}${institution ? ` from ${institution}` : ""}`,
           html: `
-            <h2>New Demo Request</h2>
+            <h2>New ${source === "chat" ? "chat message" : "demo request"}</h2>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Institution:</strong> ${institution || "Not provided"}</p>
             <p><strong>Interested In:</strong> ${interestedIn || "Not specified"}</p>
+            ${message ? `<p><strong>Message:</strong><br/>${String(message).replace(/</g, "&lt;")}</p>` : ""}
             <hr />
             <p><strong>Reply to:</strong> ${email}</p>
           `,
