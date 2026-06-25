@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ChevronRight, ChevronLeft, CheckCircle2, Gift, Lock, ArrowRight, X } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Footer } from "@/components/Footer";
 
 export default function StrategicPlanPage() {
@@ -443,7 +442,6 @@ export default function StrategicPlanPage() {
       )}
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }

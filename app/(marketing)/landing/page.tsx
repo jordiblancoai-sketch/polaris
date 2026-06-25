@@ -14,7 +14,6 @@ import { StrategyBuilder } from "@/components/StrategyBuilder";
 import { StrategicPlanBuilder } from "@/components/StrategicPlanBuilder";
 import { EnhancedContactForm } from "@/components/EnhancedContactForm";
 import { DemoVideo } from "@/components/demo/DemoVideo";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CorridorModal } from "@/components/CorridorModal";
 import { Footer } from "@/components/Footer";
 import { FAQ } from "@/components/FAQ";
@@ -890,7 +889,6 @@ export default function LandingPage() {
       <EnhancedContactForm isOpen={contactModal} onClose={() => setContactModal(false)} />
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }
