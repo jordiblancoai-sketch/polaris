@@ -8,8 +8,8 @@ import { useEffect } from "react";
 // Where to get the ID: tawk.to → Admin → Channels → Chat Widget →
 // the embed src looks like  https://embed.tawk.to/<PROPERTY_ID>/<WIDGET_ID>
 
-const PROPERTY_ID = process.env.NEXT_PUBLIC_TAWK_PROPERTY_ID;
-const WIDGET_ID = process.env.NEXT_PUBLIC_TAWK_WIDGET_ID || "default";
+const PROPERTY_ID = process.env.NEXT_PUBLIC_TAWK_PROPERTY_ID || "6a3d4e2e35bb181d4aa8aecd";
+const WIDGET_ID = process.env.NEXT_PUBLIC_TAWK_WIDGET_ID || "1jrvnirde";
 
 export function TawkChat() {
   useEffect(() => {
