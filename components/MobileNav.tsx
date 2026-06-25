@@ -18,7 +18,7 @@ export function MobileNav() {
       {NAV.map(({ href, icon: Icon, label }) => {
         const active = path.startsWith(href);
         return (
-          <Link key={href} href={href} target="_blank" rel="noopener"
+          <Link key={href} href={href}
             className={cn(
               "flex-1 flex flex-col items-center justify-center py-3 gap-0.5 transition-colors",
               active ? "text-gold-400" : "text-navy-400 hover:text-navy-200"

@@ -18,7 +18,7 @@ export function Sidebar() {
   return (
     <aside className="hidden md:flex w-60 bg-navy-900 text-white flex-col h-screen shrink-0">
       {/* Logo — click to go back home */}
-      <Link href="/landing" target="_blank" rel="noopener" className="block px-5 pt-6 pb-5 border-b border-navy-700 hover:bg-navy-800/50 transition-colors">
+      <Link href="/landing" className="block px-5 pt-6 pb-5 border-b border-navy-700 hover:bg-navy-800/50 transition-colors">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-navy-700 rounded-full flex items-center justify-center shrink-0">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-gold-400">
@@ -47,7 +47,6 @@ export function Sidebar() {
             <Link
               key={href}
               href={href}
-              target="_blank" rel="noopener"
               className={cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all group",
                 active
