@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { CORRIDORS, RankedOpportunity, CorridorSummary } from "@/lib/types";
 import { scoresFor } from "@/lib/scores";
@@ -31,8 +32,18 @@ function RegionCard({ r, onClick }: { r: RankedOpportunity; onClick: () => void 
 }
 
 export function CorridorExplorer() {
-  const [view, setView] = useState<View>("world");
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useSearchParams();
+  const cParam = params.get("c");
+  const view: View = (CORRIDORS.some(c => c.key === cParam) ? cParam : "world") as View;
+  const setView = (v: View) =>
+    router.push(v === "world" ? pathname : `${pathname}?c=${v}`, { scroll: false });
+
   const [selected, setSelected] = useState<RankedOpportunity | null>(null);
+
+  // Clear any open region modal when switching corridor.
+  useEffect(() => { setSelected(null); }, [view]);
 
   // Warm both the GeoJSON data AND the map component JS chunks up front, so
   // switching corridors is instant instead of paying a cold fetch + code-load

@@ -85,28 +85,6 @@ export default function WorldMapContent({ onCorridorSelect }: Props) {
           );
         })}
       </ComposableMap>
-
-      {/* Corridor cards overlay */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-2 z-20 w-full px-3">
-        {CORRIDORS.map(c => (
-          <button
-            key={c.key}
-            onClick={() => onCorridorSelect?.(c.key)}
-            onMouseEnter={() => setHovered(c.key)}
-            onMouseLeave={() => setHovered(null)}
-            className="bg-navy-900/90 backdrop-blur-sm border border-navy-700 hover:border-gold-400/60 rounded-xl px-3 py-2 transition-all text-left group"
-          >
-            <div className="flex items-center gap-2">
-              <span className="text-base md:text-lg">{c.flag}</span>
-              <div>
-                <div className="text-white text-[11px] md:text-xs font-bold group-hover:text-gold-400 transition-colors">{c.country} → US</div>
-                <div className="text-navy-400 text-[9px] hidden sm:block">{c.regionsScored} regions · top {c.topRegion} ({c.topScore})</div>
-                <div className="text-navy-400 text-[9px] sm:hidden">{c.regionsScored} regions · {c.topScore}</div>
-              </div>
-            </div>
-          </button>
-        ))}
-      </div>
     </div>
   );
 }

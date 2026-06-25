@@ -1,8 +1,10 @@
 "use client";
+import { Suspense } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Map, Plane, BarChart2, Settings, TrendingUp } from "lucide-react";
+import { Map, Plane, Settings, TrendingUp } from "lucide-react";
+import { CorridorDropdown } from "@/components/CorridorDropdown";
 
 const NAV = [
   { href: "/map",      icon: Map,       label: "Opportunity Map",   sub: "Where to recruit" },
@@ -32,17 +34,10 @@ export function Sidebar() {
         </div>
       </Link>
 
-      {/* Corridor badge */}
-      <div className="mx-4 mt-4 px-3 py-2 bg-navy-800 rounded-lg border border-navy-700">
-        <div className="text-[10px] text-navy-400 uppercase tracking-wider mb-1">Active Corridor</div>
-        <div className="flex items-center gap-2">
-          <span className="text-lg">🇨🇳</span>
-          <span className="text-xs font-medium text-white">China</span>
-          <span className="text-navy-400 text-xs">→</span>
-          <span className="text-lg">🇺🇸</span>
-          <span className="text-xs font-medium text-white">United States</span>
-        </div>
-      </div>
+      {/* Corridor selector */}
+      <Suspense fallback={<div className="mx-4 mt-4 h-16 bg-navy-800 rounded-lg border border-navy-700 animate-pulse" />}>
+        <CorridorDropdown />
+      </Suspense>
 
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-1">
