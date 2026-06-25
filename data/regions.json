@@ -1,0 +1,571 @@
+{
+ "CHN": {
+  "country": "China",
+  "regions": [
+   {
+    "id": "1",
+    "name": "Zhejiang"
+   },
+   {
+    "id": "2",
+    "name": "Jiangsu"
+   },
+   {
+    "id": "3",
+    "name": "Fujian"
+   },
+   {
+    "id": "4",
+    "name": "Sichuan"
+   },
+   {
+    "id": "5",
+    "name": "Hubei"
+   },
+   {
+    "id": "6",
+    "name": "Hunan"
+   },
+   {
+    "id": "7",
+    "name": "Shaanxi"
+   },
+   {
+    "id": "8",
+    "name": "Shandong"
+   },
+   {
+    "id": "9",
+    "name": "Chongqing"
+   },
+   {
+    "id": "10",
+    "name": "Tianjin"
+   },
+   {
+    "id": "11",
+    "name": "Liaoning"
+   },
+   {
+    "id": "12",
+    "name": "Hebei"
+   },
+   {
+    "id": "13",
+    "name": "Inner Mongolia"
+   },
+   {
+    "id": "14",
+    "name": "Guangdong"
+   },
+   {
+    "id": "15",
+    "name": "Shanxi"
+   },
+   {
+    "id": "16",
+    "name": "Anhui"
+   },
+   {
+    "id": "17",
+    "name": "Jiangxi"
+   },
+   {
+    "id": "18",
+    "name": "Henan"
+   },
+   {
+    "id": "19",
+    "name": "Guangxi"
+   },
+   {
+    "id": "20",
+    "name": "Hainan"
+   },
+   {
+    "id": "21",
+    "name": "Heilongjiang"
+   },
+   {
+    "id": "22",
+    "name": "Jilin"
+   },
+   {
+    "id": "23",
+    "name": "Yunnan"
+   },
+   {
+    "id": "24",
+    "name": "Guizhou"
+   },
+   {
+    "id": "25",
+    "name": "Ningxia"
+   },
+   {
+    "id": "26",
+    "name": "Shanxi"
+   },
+   {
+    "id": "27",
+    "name": "Gansu"
+   },
+   {
+    "id": "28",
+    "name": "Beijing"
+   },
+   {
+    "id": "29",
+    "name": "Shanghai"
+   },
+   {
+    "id": "30",
+    "name": "Xinjiang"
+   },
+   {
+    "id": "31",
+    "name": "Tibet"
+   }
+  ]
+ },
+ "JPN": {
+  "country": "Japan",
+  "regions": [
+   {
+    "id": "jp1",
+    "name": "Kyoto"
+   },
+   {
+    "id": "jp2",
+    "name": "Osaka"
+   },
+   {
+    "id": "jp3",
+    "name": "Tokyo"
+   },
+   {
+    "id": "jp4",
+    "name": "Kanagawa"
+   },
+   {
+    "id": "jp5",
+    "name": "Saitama"
+   },
+   {
+    "id": "jp6",
+    "name": "Aichi"
+   },
+   {
+    "id": "jp7",
+    "name": "Fukuoka"
+   },
+   {
+    "id": "jp8",
+    "name": "Hiroshima"
+   },
+   {
+    "id": "jp9",
+    "name": "Nagoya"
+   },
+   {
+    "id": "jp10",
+    "name": "Hyogo"
+   },
+   {
+    "id": "jp11",
+    "name": "Shiga"
+   },
+   {
+    "id": "jp12",
+    "name": "Nara"
+   },
+   {
+    "id": "jp13",
+    "name": "Wakayama"
+   },
+   {
+    "id": "jp14",
+    "name": "Okayama"
+   },
+   {
+    "id": "jp15",
+    "name": "Kagawa"
+   },
+   {
+    "id": "jp16",
+    "name": "Ehime"
+   },
+   {
+    "id": "jp17",
+    "name": "Koichi"
+   },
+   {
+    "id": "jp18",
+    "name": "Tokushima"
+   },
+   {
+    "id": "jp19",
+    "name": "Hokkaido"
+   },
+   {
+    "id": "jp20",
+    "name": "Aomori"
+   },
+   {
+    "id": "jp21",
+    "name": "Iwate"
+   },
+   {
+    "id": "jp22",
+    "name": "Miyagi"
+   },
+   {
+    "id": "jp23",
+    "name": "Akita"
+   },
+   {
+    "id": "jp24",
+    "name": "Yamagata"
+   },
+   {
+    "id": "jp25",
+    "name": "Fukushima"
+   },
+   {
+    "id": "jp26",
+    "name": "Ibaraki"
+   },
+   {
+    "id": "jp27",
+    "name": "Tochigi"
+   },
+   {
+    "id": "jp28",
+    "name": "Gunma"
+   },
+   {
+    "id": "jp29",
+    "name": "Niigata"
+   },
+   {
+    "id": "jp30",
+    "name": "Toyama"
+   },
+   {
+    "id": "jp31",
+    "name": "Ishikawa"
+   },
+   {
+    "id": "jp32",
+    "name": "Fukui"
+   },
+   {
+    "id": "jp33",
+    "name": "Yamanashi"
+   },
+   {
+    "id": "jp34",
+    "name": "Nagano"
+   },
+   {
+    "id": "jp35",
+    "name": "Gifu"
+   },
+   {
+    "id": "jp36",
+    "name": "Mie"
+   },
+   {
+    "id": "jp37",
+    "name": "Yamaguchi"
+   },
+   {
+    "id": "jp38",
+    "name": "Saga"
+   },
+   {
+    "id": "jp39",
+    "name": "Nagasaki"
+   },
+   {
+    "id": "jp40",
+    "name": "Kumamoto"
+   },
+   {
+    "id": "jp41",
+    "name": "Oita"
+   },
+   {
+    "id": "jp42",
+    "name": "Miyazaki"
+   },
+   {
+    "id": "jp43",
+    "name": "Kagoshima"
+   },
+   {
+    "id": "jp44",
+    "name": "Okinawa"
+   },
+   {
+    "id": "jp45",
+    "name": "Shimane"
+   },
+   {
+    "id": "jp46",
+    "name": "Tottori"
+   },
+   {
+    "id": "jp47",
+    "name": "Akita"
+   }
+  ]
+ },
+ "KOR": {
+  "country": "South Korea",
+  "regions": [
+   {
+    "id": "kr1",
+    "name": "Seoul"
+   },
+   {
+    "id": "kr2",
+    "name": "Gyeonggi"
+   },
+   {
+    "id": "kr3",
+    "name": "Busan"
+   },
+   {
+    "id": "kr4",
+    "name": "Incheon"
+   },
+   {
+    "id": "kr5",
+    "name": "Daejeon"
+   },
+   {
+    "id": "kr6",
+    "name": "Daegu"
+   },
+   {
+    "id": "kr7",
+    "name": "Gwangju"
+   },
+   {
+    "id": "kr8",
+    "name": "Ulsan"
+   },
+   {
+    "id": "kr9",
+    "name": "Sejong"
+   },
+   {
+    "id": "kr10",
+    "name": "South Gyeongsang"
+   },
+   {
+    "id": "kr11",
+    "name": "North Gyeongsang"
+   },
+   {
+    "id": "kr12",
+    "name": "South Chungcheong"
+   },
+   {
+    "id": "kr13",
+    "name": "North Chungcheong"
+   },
+   {
+    "id": "kr14",
+    "name": "Gangwon"
+   },
+   {
+    "id": "kr15",
+    "name": "North Jeolla"
+   },
+   {
+    "id": "kr16",
+    "name": "South Jeolla"
+   },
+   {
+    "id": "kr17",
+    "name": "Jeju"
+   }
+  ]
+ },
+ "IND": {
+  "country": "India",
+  "regions": [
+   {
+    "id": "in1",
+    "name": "Andhra Pradesh"
+   },
+   {
+    "id": "in2",
+    "name": "Telangana"
+   },
+   {
+    "id": "in3",
+    "name": "Maharashtra"
+   },
+   {
+    "id": "in4",
+    "name": "Gujarat"
+   },
+   {
+    "id": "in5",
+    "name": "Tamil Nadu"
+   },
+   {
+    "id": "in6",
+    "name": "Karnataka"
+   },
+   {
+    "id": "in7",
+    "name": "Delhi"
+   },
+   {
+    "id": "in8",
+    "name": "Punjab"
+   },
+   {
+    "id": "in9",
+    "name": "Uttar Pradesh"
+   },
+   {
+    "id": "in10",
+    "name": "Kerala"
+   },
+   {
+    "id": "in11",
+    "name": "Haryana"
+   },
+   {
+    "id": "in12",
+    "name": "West Bengal"
+   },
+   {
+    "id": "in13",
+    "name": "Rajasthan"
+   },
+   {
+    "id": "in14",
+    "name": "Madhya Pradesh"
+   },
+   {
+    "id": "in15",
+    "name": "Bihar"
+   },
+   {
+    "id": "in16",
+    "name": "Jharkhand"
+   },
+   {
+    "id": "in17",
+    "name": "Odisha"
+   },
+   {
+    "id": "in18",
+    "name": "Chhattisgarh"
+   },
+   {
+    "id": "in19",
+    "name": "Uttarakhand"
+   },
+   {
+    "id": "in20",
+    "name": "Himachal Pradesh"
+   },
+   {
+    "id": "in21",
+    "name": "Goa"
+   },
+   {
+    "id": "in22",
+    "name": "Assam"
+   },
+   {
+    "id": "in23",
+    "name": "Chandigarh"
+   },
+   {
+    "id": "in24",
+    "name": "Jammu and Kashmir"
+   },
+   {
+    "id": "in25",
+    "name": "Puducherry"
+   },
+   {
+    "id": "in26",
+    "name": "Tripura"
+   },
+   {
+    "id": "in27",
+    "name": "Meghalaya"
+   },
+   {
+    "id": "in28",
+    "name": "Manipur"
+   },
+   {
+    "id": "in29",
+    "name": "Nagaland"
+   },
+   {
+    "id": "in30",
+    "name": "Sikkim"
+   },
+   {
+    "id": "in31",
+    "name": "Mizoram"
+   },
+   {
+    "id": "in32",
+    "name": "Arunachal Pradesh"
+   },
+   {
+    "id": "in33",
+    "name": "Ladakh"
+   },
+   {
+    "id": "in34",
+    "name": "Dadra and Nagar Haveli and Daman and Diu"
+   },
+   {
+    "id": "in35",
+    "name": "Lakshadweep"
+   },
+   {
+    "id": "in36",
+    "name": "Andaman and Nicobar Islands"
+   }
+  ]
+ },
+ "SGP": {
+  "country": "Singapore",
+  "regions": [
+   {
+    "id": "41",
+    "name": "Central Region"
+   },
+   {
+    "id": "42",
+    "name": "East Region"
+   },
+   {
+    "id": "43",
+    "name": "North Region"
+   },
+   {
+    "id": "44",
+    "name": "West Region"
+   },
+   {
+    "id": "45",
+    "name": "Northeast Region"
+   }
+  ]
+ }
+}

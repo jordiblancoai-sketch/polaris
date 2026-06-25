@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { MOCK_SCORES } from "@/lib/types";
+import { scoresFor } from "@/lib/scores";
 
 const GEO_URL = "/geo/korea.json";
 
@@ -23,7 +23,7 @@ export default function KoreaMapContent({ onProvinceSelect, selectedProvince }: 
   // Normalize names so GeoJSON matches score data
   const norm = (s: string) => s.toUpperCase().replace(/PREFECTURE|REGION|PROVINCE/g, "").replace(/[^A-Z]/g, "");
   const scoreMap: Record<string, { score: number; name: string }> = {};
-  MOCK_SCORES.forEach(s => { if (s.target_country_iso === "KOR") scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
+  scoresFor("KOR").forEach(s => { scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
 
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-blue-950 to-navy-950 rounded-xl overflow-hidden">

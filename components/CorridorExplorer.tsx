@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { CORRIDORS, RankedOpportunity, CorridorSummary } from "@/lib/types";
+import { scoresFor } from "@/lib/scores";
 import { WorldMap } from "@/components/WorldMap";
 import { ChinaMap } from "@/components/ChinaMap";
 import { JapanMap } from "@/components/JapanMap";
@@ -82,7 +83,7 @@ export function CorridorExplorer() {
                   <div className="text-navy-500 text-[10px]">All 31 provinces · click for full analysis</div>
                 </div>
                 <div className="divide-y divide-navy-800/60">
-                  {corridor!.scores.map(r => {
+                  {scoresFor(corridor!.iso).map(r => {
                     const color = r.score >= 70 ? "#10b981" : r.score >= 50 ? "#d97706" : "#ef4444";
                     const active = selected?.target_entity_name === r.target_entity_name;
                     return (
@@ -109,7 +110,7 @@ export function CorridorExplorer() {
               <div className="flex-1 relative">
                 <ChinaMap
                   onProvinceSelect={(name) => {
-                    const r = corridor!.scores.find(s => s.target_entity_name === name);
+                    const r = scoresFor(corridor!.iso).find(s => s.target_entity_name === name);
                     if (r) setSelected(r);
                   }}
                   selectedProvince={selected?.target_entity_name || null}
@@ -127,7 +128,7 @@ export function CorridorExplorer() {
                   <div className="text-navy-500 text-[10px]">47 prefectures · click for full analysis</div>
                 </div>
                 <div className="divide-y divide-navy-800/60">
-                  {corridor!.scores.map(r => {
+                  {scoresFor(corridor!.iso).map(r => {
                     const color = r.score >= 70 ? "#10b981" : r.score >= 50 ? "#d97706" : "#ef4444";
                     const active = selected?.target_entity_name === r.target_entity_name;
                     return (
@@ -154,7 +155,7 @@ export function CorridorExplorer() {
               <div className="flex-1 relative">
                 <JapanMap
                   onPrefectureSelect={(name) => {
-                    const r = corridor!.scores.find(s => s.target_entity_name === name);
+                    const r = scoresFor(corridor!.iso).find(s => s.target_entity_name === name);
                     if (r) setSelected(r);
                   }}
                   selectedPrefecture={selected?.target_entity_name || null}
@@ -172,7 +173,7 @@ export function CorridorExplorer() {
                   <div className="text-navy-500 text-[10px]">5 regions · click for full analysis</div>
                 </div>
                 <div className="divide-y divide-navy-800/60">
-                  {corridor!.scores.map(r => {
+                  {scoresFor(corridor!.iso).map(r => {
                     const color = r.score >= 70 ? "#059669" : r.score >= 50 ? "#d97706" : "#ef4444";
                     const active = selected?.target_entity_name === r.target_entity_name;
                     return (
@@ -199,7 +200,7 @@ export function CorridorExplorer() {
               <div className="flex-1 relative">
                 <SingaporeMap
                   onRegionSelect={(name) => {
-                    const r = corridor!.scores.find(s => s.target_entity_name === name);
+                    const r = scoresFor(corridor!.iso).find(s => s.target_entity_name === name);
                     if (r) setSelected(r);
                   }}
                   selectedRegion={selected?.target_entity_name || null}
@@ -217,7 +218,7 @@ export function CorridorExplorer() {
                   <div className="text-navy-500 text-[10px]">17 provinces · click for full analysis</div>
                 </div>
                 <div className="divide-y divide-navy-800/60">
-                  {corridor!.scores.map(r => {
+                  {scoresFor(corridor!.iso).map(r => {
                     const color = r.score >= 70 ? "#10b981" : r.score >= 50 ? "#d97706" : "#ef4444";
                     const active = selected?.target_entity_name === r.target_entity_name;
                     return (
@@ -244,7 +245,7 @@ export function CorridorExplorer() {
               <div className="flex-1 relative">
                 <KoreaMap
                   onProvinceSelect={(name) => {
-                    const r = corridor!.scores.find(s => s.target_entity_name === name);
+                    const r = scoresFor(corridor!.iso).find(s => s.target_entity_name === name);
                     if (r) setSelected(r);
                   }}
                   selectedProvince={selected?.target_entity_name || null}
@@ -262,7 +263,7 @@ export function CorridorExplorer() {
                   <div className="text-navy-500 text-[10px]">36 states · click for full analysis</div>
                 </div>
                 <div className="divide-y divide-navy-800/60">
-                  {corridor!.scores.map(r => {
+                  {scoresFor(corridor!.iso).map(r => {
                     const color = r.score >= 70 ? "#10b981" : r.score >= 50 ? "#d97706" : "#ef4444";
                     const active = selected?.target_entity_name === r.target_entity_name;
                     return (
@@ -289,7 +290,7 @@ export function CorridorExplorer() {
               <div className="flex-1 relative">
                 <IndiaMap
                   onStateSelect={(name) => {
-                    const r = corridor!.scores.find(s => s.target_entity_name === name);
+                    const r = scoresFor(corridor!.iso).find(s => s.target_entity_name === name);
                     if (r) setSelected(r);
                   }}
                   selectedState={selected?.target_entity_name || null}

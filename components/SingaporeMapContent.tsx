@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { MOCK_SCORES } from "@/lib/types";
+import { scoresFor } from "@/lib/scores";
 
 const GEO_URL = "/geo/singapore.json";
 
@@ -23,7 +23,7 @@ export default function SingaporeMapContent({ onRegionSelect, selectedRegion }: 
   // Normalize names so GeoJSON ("NORTH-EAST REGION") matches score data ("Northeast Region")
   const norm = (s: string) => s.toUpperCase().replace(/PREFECTURE|REGION/g, "").replace(/[^A-Z]/g, "");
   const scoreMap: Record<string, { score: number; name: string }> = {};
-  MOCK_SCORES.forEach(s => { if (s.target_country_iso === "SGP") scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
+  scoresFor("SGP").forEach(s => { scoreMap[norm(s.target_entity_name)] = { score: s.score, name: s.target_entity_name }; });
 
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-emerald-950 to-navy-950 rounded-xl overflow-hidden">

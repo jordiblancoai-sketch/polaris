@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { MOCK_SCORES } from "@/lib/types";
+import { scoresFor } from "@/lib/scores";
 
 // Local standard GeoJSON (real lng/lat coords, English names)
 const GEO_URL = "/geo/china.json";
@@ -27,7 +27,7 @@ export default function MapContent({ onProvinceSelect, selectedProvince }: Props
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; score: number } | null>(null);
 
   const scoreMap: Record<string, number> = {};
-  MOCK_SCORES.forEach(s => { scoreMap[s.target_entity_name] = s.score; });
+  scoresFor("CHN").forEach(s => { scoreMap[s.target_entity_name] = s.score; });
 
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950 rounded-xl overflow-hidden">

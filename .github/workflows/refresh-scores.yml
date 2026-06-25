@@ -1,0 +1,36 @@
+name: Refresh corridor scores (Bright Data)
+
+# Nightly at 02:00 UTC, plus manual "Run workflow" button.
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  scores:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build live scores from Bright Data
+        env:
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHTDATA_API_KEY }}
+          BRIGHTDATA_SERP_ZONE: ${{ secrets.BRIGHTDATA_SERP_ZONE }}
+          BRIGHTDATA_UNLOCKER_ZONE: ${{ secrets.BRIGHTDATA_UNLOCKER_ZONE }}
+        run: node scripts/build-scores.mjs
+
+      - name: Commit updated scores
+        run: |
+          git config user.name  "polaris-bot"
+          git config user.email "bot@polarisuni.com"
+          if ! git diff --quiet -- data/scores.generated.json; then
+            git add data/scores.generated.json
+            git commit -m "chore: nightly score refresh (Bright Data)"
+            git push
+          else
+            echo "No score changes."
+          fi
