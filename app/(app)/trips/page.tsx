@@ -5,38 +5,114 @@ import { TripPlanResponse } from "@/lib/types";
 import { usd, scoreColor, cn } from "@/lib/utils";
 import { generateTripPDF } from "@/lib/trip-pdf";
 import { Plane, DollarSign, Users, TrendingUp, School, ChevronRight, Loader2, FileText, Check } from "lucide-react";
+import { CORRIDORS } from "@/lib/types";
+import { scoresFor } from "@/lib/scores";
 
-// Demo trip result for China → US
-const DEMO_TRIP: TripPlanResponse = {
-  itinerary: [
-    { city_id: "1", city_name: "Wuhan",    country_iso: "CHN", opportunity_score: 73, schools_to_visit: [{ id:"1", name:"Wuhan University High School", type:"public", has_ib:false, student_count:3500 }, { id:"2", name:"Huazhong University Affiliated High School", type:"public", has_ib:false, student_count:4000 }, { id:"3", name:"Wuhan Foreign Language School", type:"public", has_ib:true, student_count:2800 }], estimated_cost_usd: 3200, projected_enrolled_students: 6.8, days_recommended: 3, notes: "China's biggest student city. Schedule visits Mon–Wed." },
-    { city_id: "2", city_name: "Chengdu",  country_iso: "CHN", opportunity_score: 74, schools_to_visit: [{ id:"4", name:"Chengdu No.7 High School", type:"public", has_ib:false, student_count:3800 }, { id:"5", name:"Sichuan University Affiliated School", type:"public", has_ib:false, student_count:3200 }, { id:"6", name:"Chengdu International School", type:"international", has_ib:true, student_count:1200 }], estimated_cost_usd: 3400, projected_enrolled_students: 7.2, days_recommended: 3, notes: "Fast-growing tech hub. 95 competitors vs 380 in Beijing." },
-    { city_id: "3", city_name: "Hangzhou", country_iso: "CHN", opportunity_score: 82, schools_to_visit: [{ id:"7", name:"Hangzhou No.2 High School", type:"public", has_ib:false, student_count:4200 }, { id:"8", name:"Zhejiang University Affiliated High School", type:"public", has_ib:false, student_count:3600 }, { id:"9", name:"Hangzhou Foreign Language School", type:"public", has_ib:true, student_count:2400 }], estimated_cost_usd: 3100, projected_enrolled_students: 8.4, days_recommended: 2, notes: "Top scoring province. Alibaba/tech wealth. Start here." },
-    { city_id: "4", city_name: "Nanjing",  country_iso: "CHN", opportunity_score: 81, schools_to_visit: [{ id:"10", name:"Nanjing Foreign Language School", type:"public", has_ib:true, student_count:3000 }, { id:"11", name:"Nanjing No.1 High School", type:"public", has_ib:false, student_count:3800 }], estimated_cost_usd: 2800, projected_enrolled_students: 7.8, days_recommended: 2, notes: "Strong STEM pipeline. Nanjing University feeder schools." },
-  ],
-  total_cost_usd: 12_500,
-  total_days: 10,
-  projected_total_enrollments: 30.2,
-  projected_cost_per_enrollment_usd: 414,
-  historical_cost_per_enrollment_usd: 2_500,
-  savings_vs_historical_usd: 63_000,
-  roi_narrative: "This 4-city inland itinerary focuses on underserved markets where your budget works harder. At $414/projected enrollment vs. your historical $2,500/enrollment, this approach frees $63,000 in recruiting budget — the equivalent of another full trip cycle.",
-};
+const HISTORICAL_CPE = 2_500; // historical cost per enrollment to benchmark against
+
+function flagFor(iso: string) { return CORRIDORS.find(c => c.iso === iso)?.flag ?? "🏳️"; }
+function countryName(iso: string) { return CORRIDORS.find(c => c.iso === iso)?.country ?? iso; }
+
+function schoolsFor(region: string, iso: string) {
+  const intl = iso === "SGP" || iso === "IND";
+  return [
+    { id: `${region}-1`, name: `${region} No.1 High School`,        type: "public",        has_ib: false, student_count: 3800 },
+    { id: `${region}-2`, name: `${region} Foreign Language School`, type: "public",        has_ib: true,  student_count: 2600 },
+    ...(intl ? [{ id: `${region}-3`, name: `${region} International School`, type: "international", has_ib: true, student_count: 1200 }] : []),
+  ];
+}
+
+// Build a multi-country itinerary from the selected corridors, budget and days.
+// Pulls the highest-scoring regions of each chosen country (real score data),
+// distributes the days/budget across them, and computes the ROI numbers.
+function buildItinerary(isos: string[], budget: number, days: number): TripPlanResponse {
+  const perCountry = isos.map(iso => ({ iso, regions: scoresFor(iso) }));
+  const nCountries = isos.length;
+  const maxStops = Math.max(nCountries, Math.min(8, Math.round(days / 2.5)));
+
+  // Round-robin the top regions across countries until we hit maxStops.
+  const picked: { iso: string; region: string; score: number }[] = [];
+  for (let depth = 0; picked.length < maxStops; depth++) {
+    let added = false;
+    for (const pc of perCountry) {
+      const r = pc.regions[depth];
+      if (r) { picked.push({ iso: pc.iso, region: r.target_entity_name, score: r.score }); added = true; }
+      if (picked.length >= maxStops) break;
+    }
+    if (!added) break;
+  }
+  picked.sort((a, b) => b.score - a.score); // visit highest-yield first
+
+  // Cost model: long-haul + inter-country hops + per-stop ground cost.
+  const flightsCost = 1400 + (nCountries - 1) * 900;
+  const groundPer = Math.max(1500, Math.round((budget - flightsCost) / Math.max(1, picked.length)));
+
+  const itinerary = picked.map((p, i) => {
+    const days_recommended = p.iso === "SGP" ? 2 : p.score >= 75 ? 3 : 2;
+    const estimated_cost_usd = groundPer + (i === 0 ? flightsCost : 0);
+    const projected_enrolled_students = +((p.score / 100) * days_recommended * 3).toFixed(1);
+    return {
+      city_id: `${p.iso}-${i}`,
+      city_name: p.region,
+      country_iso: p.iso,
+      opportunity_score: p.score,
+      schools_to_visit: schoolsFor(p.region, p.iso),
+      estimated_cost_usd,
+      projected_enrolled_students,
+      days_recommended,
+      notes: p.score >= 70
+        ? `Top-tier ${countryName(p.iso)} region — strong demand, low recruiter saturation.`
+        : `Emerging ${countryName(p.iso)} region — lower competition, watch the pipeline size.`,
+    };
+  });
+
+  const total_cost_usd = itinerary.reduce((a, s) => a + s.estimated_cost_usd, 0);
+  const total_days = itinerary.reduce((a, s) => a + s.days_recommended, 0);
+  const projected_total_enrollments = +itinerary.reduce((a, s) => a + s.projected_enrolled_students, 0).toFixed(1);
+  const cpe = projected_total_enrollments > 0 ? Math.round(total_cost_usd / projected_total_enrollments) : 0;
+  const savings = Math.max(0, Math.round((HISTORICAL_CPE - cpe) * projected_total_enrollments));
+  const names = isos.map(countryName);
+  const countryList = names.length === 1 ? names[0]
+    : `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+
+  return {
+    itinerary,
+    total_cost_usd,
+    total_days,
+    projected_total_enrollments,
+    projected_cost_per_enrollment_usd: cpe,
+    historical_cost_per_enrollment_usd: HISTORICAL_CPE,
+    savings_vs_historical_usd: savings,
+    roi_narrative: `This ${itinerary.length}-stop itinerary across ${countryList} targets the highest-yield regions in each market. At ${cpe ? "$" + cpe.toLocaleString() : "—"}/projected enrollment vs. your historical $2,500/enrollment, this approach frees roughly $${savings.toLocaleString()} in recruiting budget.`,
+  };
+}
 
 export default function TripsPage() {
   const [budget, setBudget]       = useState(15000);
   const [days, setDays]           = useState(10);
   const [target, setTarget]       = useState(25);
   const [program, setProgram]     = useState("graduate");
+  const [countries, setCountries] = useState<string[]>(["CHN"]);
   const [result, setResult]       = useState<TripPlanResponse | null>(null);
   const [loading, setLoading]     = useState(false);
   const [downloading, setDownloading] = useState(false);
   const [saved, setSaved]         = useState(false);
 
+  function toggleCountry(iso: string) {
+    setCountries(prev =>
+      prev.includes(iso)
+        ? (prev.length > 1 ? prev.filter(c => c !== iso) : prev) // keep at least one
+        : [...prev, iso]
+    );
+  }
+
   async function handlePlan() {
+    if (countries.length === 0) return;
     setLoading(true);
-    await new Promise(r => setTimeout(r, 1200)); // simulate API call
-    setResult(DEMO_TRIP);
+    await new Promise(r => setTimeout(r, 1000)); // simulate optimization
+    // order selected ISOs by the corridor display order for a stable itinerary
+    const ordered = CORRIDORS.filter(c => countries.includes(c.iso)).map(c => c.iso);
+    setResult(buildItinerary(ordered, budget, days));
     setLoading(false);
   }
 
@@ -68,7 +144,7 @@ export default function TripsPage() {
               <Plane className="w-5 h-5 text-navy-700" /> Travel ROI Planner
             </h1>
             <p className="text-sm text-gray-500 mt-1">
-              Enter your budget and trip constraints — get the optimal China itinerary with projected enrollments and dollars saved.
+              Pick the countries you'll visit and your budget — get the optimal multi-country itinerary with projected enrollments and dollars saved.
             </p>
           </div>
           <Image
@@ -86,6 +162,40 @@ export default function TripsPage() {
         {/* Input card */}
         <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">
           <h2 className="text-sm font-semibold text-gray-700 mb-5 uppercase tracking-wider">Trip Parameters</h2>
+
+          {/* Countries to visit (multi-select) */}
+          <div className="mb-6">
+            <label className="text-xs font-medium text-gray-500 block mb-2">
+              Countries to visit <span className="text-gray-400">· pick one or more</span>
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {CORRIDORS.map(c => {
+                const on = countries.includes(c.iso);
+                return (
+                  <button
+                    key={c.iso}
+                    type="button"
+                    onClick={() => toggleCountry(c.iso)}
+                    aria-pressed={on}
+                    className={cn(
+                      "flex items-center gap-1.5 px-3 py-2 rounded-lg border text-sm font-medium transition-all",
+                      on
+                        ? "bg-navy-900 border-navy-900 text-white shadow-sm"
+                        : "bg-white border-gray-200 text-gray-600 hover:border-navy-300 hover:bg-gray-50"
+                    )}
+                  >
+                    <span className="text-base">{c.flag}</span>
+                    {c.country}
+                    {on && <Check className="w-3.5 h-3.5 text-gold-400" />}
+                  </button>
+                );
+              })}
+            </div>
+            <p className="text-[10px] text-gray-400 mt-1.5">
+              {countries.length} {countries.length === 1 ? "country" : "countries"} selected · we'll route the highest-yield regions across them
+            </p>
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div>
               <label className="text-xs font-medium text-gray-500 block mb-1.5">Total Budget (USD)</label>
@@ -175,7 +285,10 @@ export default function TripsPage() {
             {/* Itinerary */}
             <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
               <div className="px-6 py-4 border-b border-gray-100">
-                <h2 className="font-semibold text-gray-900">Optimized Itinerary — {result.itinerary.length} Cities</h2>
+                <h2 className="font-semibold text-gray-900">
+                  Optimized Itinerary — {result.itinerary.length} stops
+                  {(() => { const n = new Set(result.itinerary.map(s => s.country_iso)).size; return n > 1 ? ` across ${n} countries` : ""; })()}
+                </h2>
                 <p className="text-xs text-gray-500 mt-0.5">Ranked by projected yield/cost ratio. Visit in this order to minimize travel cost.</p>
               </div>
               <div className="divide-y divide-gray-50">
@@ -190,6 +303,7 @@ export default function TripsPage() {
                         <div className="flex-1">
                           <div className="flex items-center justify-between">
                             <div>
+                              <span className="text-base mr-1.5">{flagFor(stop.country_iso)}</span>
                               <span className="font-semibold text-gray-900 text-base">{stop.city_name}</span>
                               <span className="text-gray-400 text-sm ml-2">· {stop.days_recommended} days</span>
                             </div>
