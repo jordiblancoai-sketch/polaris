@@ -469,7 +469,7 @@ export default function LandingPage() {
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
             <span className="text-navy-700 text-xs font-bold uppercase tracking-widest">The Platform</span>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-3 mb-5">Precision targeting. Not gut feel.</h2>
-            <p className="text-gray-500 text-lg max-w-xl mx-auto">Every region scored across China, Japan and Singapore. Every trip optimized. Every outcome tracked.</p>
+            <p className="text-gray-500 text-lg max-w-xl mx-auto">Every region scored across all five live corridors. Every trip optimized. Every outcome tracked.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -540,13 +540,36 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-14">
             <span className="text-navy-700 text-xs font-bold uppercase tracking-widest">Data you can defend</span>
-            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-3 mb-5">Built on sources your provost already trusts.</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mt-3 mb-5">A live engine, anchored in data you can cite.</h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Every score traces back to public, citable data. No black boxes — when your CFO asks
-              "where does this number come from?", you have an answer.
+              Polaris scores are powered by a live web-intelligence engine — anchored by U.S. visa data and
+              population baselines, and benchmarked against the public datasets your provost already trusts.
+              No black boxes: every score is transparent and traceable.
             </p>
           </motion.div>
 
+          {/* Live engine highlight */}
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
+            className="bg-navy-950 rounded-2xl p-7 md:p-9 mb-12 md:flex items-start gap-8">
+            <div className="md:w-2/5 mb-5 md:mb-0">
+              <div className="text-gold-400 text-[11px] font-bold uppercase tracking-widest mb-2">The live web-intelligence engine</div>
+              <h3 className="text-2xl font-black text-white leading-tight">Re-measured every week, for all 136 regions.</h3>
+            </div>
+            <div className="md:w-3/5 grid sm:grid-cols-3 gap-5">
+              {[
+                ["136", "regions scored weekly across 5 corridors"],
+                ["6", "weighted signals behind every 0–100 score"],
+                ["100%", "transparent — trace any score to its inputs"],
+              ].map(([n, l]) => (
+                <div key={l}>
+                  <div className="text-3xl font-black text-gold-400">{n}</div>
+                  <div className="text-navy-300 text-xs mt-1 leading-snug">{l}</div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <p className="text-center text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">Benchmarked against — and integrating as live feeds</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
             {[
               { name: "IIE Open Doors", feeds: "International student enrollment in the US by origin country — the canonical census of the field.", tag: "Enrollment flows", url: "https://www.opendoorsdata.org" },
@@ -576,18 +599,19 @@ export default function LandingPage() {
               <div className="md:w-1/3 mb-8 md:mb-0">
                 <h3 className="text-2xl font-black text-white mb-3">How the score works</h3>
                 <p className="text-navy-300 text-sm leading-relaxed">
-                  Six weighted factors, normalized to 0–100 per region, recomputed weekly.
-                  Each region also carries a confidence rating based on data freshness and coverage.
+                  Six weighted signals, normalized within each corridor and blended with a demand-anchored
+                  baseline into a 0–100 score, recomputed weekly. Each region also carries a confidence
+                  rating based on signal strength and coverage.
                 </p>
               </div>
               <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 {[
-                  ["Student demand", 25, "Population 18–24, high-school density, historical outbound flows"],
-                  ["Economic fit", 20, "GDP per capita and household income vs. full tuition cost"],
-                  ["Academic pipeline", 15, "Secondary completion, English proficiency, feeder-school strength"],
-                  ["Corridor viability", 15, "F-1 approval rate, direct flights, policy stability"],
-                  ["Market white space", 15, "Inverted competitor saturation — fewer recruiters, higher score"],
-                  ["Migration momentum", 10, "Diaspora size and 5-year flow trend"],
+                  ["Student demand", 25, "Study-abroad demand surfacing across the open web, grounded in the 18–24 population"],
+                  ["Competitive white space", 25, "Inverted competitor saturation — fewer US recruiters, higher score"],
+                  ["Economic fit", 15, "Local capacity vs. full international tuition — the ability-to-pay signal"],
+                  ["Academic readiness", 15, "English proficiency, test-prep density, feeder-school strength"],
+                  ["Corridor strength", 10, "U.S. F-1 visa-approval rate and travel access"],
+                  ["Migration intent", 10, "Visa-pathway and study-abroad-agency activity"],
                 ].map(([label, w, desc]) => (
                   <div key={label as string}>
                     <div className="flex items-center justify-between mb-1">

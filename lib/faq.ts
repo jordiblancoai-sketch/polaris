@@ -8,27 +8,35 @@ export const FAQS: FaqItem[] = [
   },
   {
     q: "Where does Polaris get its data?",
-    a: "We combine authoritative public datasets — IIE Open Doors enrollment flows, U.S. Department of State F-1 visa statistics, World Bank economics, UNESCO mobility trends and EF English Proficiency — with live web signals collected and refreshed continuously. Every input is a verifiable, citable source, never a black box.",
+    a: "Polaris is powered by a live web-intelligence engine. Every week, for all 136 regions, it measures real-world signals of student demand and competitive saturation across the open web, anchored by U.S. F-1 visa-approval data and population-based demand baselines. We also benchmark every ranking against the authoritative datasets your leadership already trusts — IIE Open Doors enrollment flows, U.S. Department of State visa statistics, World Bank economics and UNESCO mobility — and are integrating them as live inputs corridor by corridor. Every signal is transparent and traceable — never a black box.",
+  },
+  {
+    q: "What is the \"live web-intelligence engine\"?",
+    a: "It's the layer that keeps Polaris current. Each week, for every region, the engine runs a battery of targeted searches across the open web and quantifies real signals — how much study-abroad demand is surfacing, how saturated the region already is with competing recruiters, and its economic and academic readiness. Those raw signals are normalized within each country and combined into the score, so your map reflects the cycle you're recruiting in now, not a report from 18 months ago.",
   },
   {
     q: "How is each region scored?",
-    a: "Every province, prefecture or state gets a 0–100 yield-probability score built from six weighted dimensions: Student Demand, Economic ability-to-pay, Academic readiness, Corridor strength (visa approval + travel access), Competitive white space, and Migration intent. The score estimates how likely your recruiting spend in that region converts to actual enrolled students.",
+    a: "Every region gets a 0–100 yield-probability score from six weighted dimensions: Student Demand (25%), Competitive White Space (25%), Economic ability-to-pay (15%), Academic readiness (15%), Corridor strength — visa approval and access (10%), and Migration intent (10%). Live signals are normalized within each country — a Japanese prefecture is ranked against Japan, not China — and blended with a demand-anchored baseline so large, proven markets are never unseated by noise. The result estimates how likely your recruiting spend there converts into enrolled students.",
   },
   {
     q: "How often is the data updated?",
-    a: "Scores are recomputed weekly. As visa policy, economic conditions and competitor activity shift through the recruiting cycle, your map stays current — so you're never planning a trip on last year's assumptions.",
+    a: "Scores are recomputed weekly. As visa conditions, economic factors and competitor activity shift through the recruiting cycle, your map stays current — so you're never planning a trip on last year's assumptions.",
   },
   {
-    q: "Which corridors are covered?",
-    a: "China, Japan, South Korea, India and Singapore → United States are live today, covering 130+ scored regions. Additional source and destination corridors are added on request as part of a pilot.",
+    q: "Is the data live, or a static report?",
+    a: "Live. Polaris re-measures every region each week through the web-intelligence engine, so scores move as the market moves. A static PDF report is out of date the day it's printed; your map keeps pace with the cycle you're actually recruiting in.",
   },
   {
     q: "Can I see why a region scores the way it does?",
-    a: "Yes. Click any region for a full transparent breakdown — the six score dimensions, the key insight, risk flags, the optimal visit window and recommended partner schools. You can show your provost exactly why one province outperforms another. No black boxes.",
+    a: "Yes — that's the whole point. Click any region for a full transparent breakdown: the six dimension scores, the leading factor, risk flags, the optimal visit window and recommended partner schools. You can show your provost exactly why one region outperforms another. No black boxes.",
   },
   {
     q: "How accurate are the scores?",
-    a: "Scores are calibrated against historical enrollment and visa outcomes, and every dimension is traceable to its source. The goal isn't a crystal ball — it's a defensible, transparent ranking that beats gut feel and outdated relationships.",
+    a: "Every score is transparent and traceable to the live signals behind it, and every ranking is anchored to known market size — so it's defensible, not a guess. It isn't a crystal ball; it's a statistically grounded ranking of where your budget is most productive, and it already beats gut feel and stale relationships. We're now adding outcome calibration — measuring each prediction against realized enrollments — to tighten it further over time.",
+  },
+  {
+    q: "Which corridors are covered?",
+    a: "China, Japan, South Korea, India and Singapore → United States are live today, covering 136 scored regions. Additional source and destination corridors are added on request as part of a pilot.",
   },
   {
     q: "How is this different from buying a list or using an agent?",
