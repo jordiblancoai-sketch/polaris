@@ -87,7 +87,7 @@ const SCENES = [
   {
     id: "corridors",
     duration: 5000,
-    title: "Japan, Korea, India and Singapore. Same precision.",
+    title: "Japan and Singapore. Same precision.",
     subtitle: "47 prefectures + 5 regions scored — high-approval markets most US universities ignore.",
   },
   {
@@ -99,8 +99,8 @@ const SCENES = [
   {
     id: "result",
     duration: 4000,
-    title: "Five corridors. Zero guesswork.",
-    subtitle: "China, Japan, Korea, India and Singapore — all scored. All transparent. All live.",
+    title: "Three corridors. Zero guesswork.",
+    subtitle: "China, Japan, Singapore — all scored. All transparent. All live.",
   },
 ];
 
