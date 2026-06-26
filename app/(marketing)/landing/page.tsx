@@ -169,7 +169,7 @@ function ROICalc() {
 
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
           className="text-center mt-10">
-          <Link href="/map"
+          <Link href="/map" target="_blank" rel="noopener"
             className="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-500 text-navy-950 font-bold text-base px-8 py-4 rounded-full transition-all hover:scale-105">
             Start your pilot <ArrowRight className="w-4 h-4" />
           </Link>
@@ -311,14 +311,14 @@ export default function LandingPage() {
 
           <motion.div variants={s(0.22)} initial="hidden" animate="visible"
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-            <Link href="/map"
+            <Link href="/map" target="_blank" rel="noopener"
               className="bg-gold-400 hover:bg-gold-500 text-navy-950 font-bold text-base px-10 py-4 rounded-full transition-all hover:scale-105 flex items-center gap-2 shadow-[0_0_60px_rgba(245,200,66,0.35)]">
               See it live <ArrowRight className="w-4 h-4" />
             </Link>
-            <button onClick={() => { setModal(true); setNotifyOpen(false); }}
+            <Link href="/demo" target="_blank" rel="noopener"
               className="flex items-center gap-2.5 text-white/80 hover:text-white border border-white/25 hover:border-gold-400/60 backdrop-blur-sm bg-white/5 px-7 py-4 rounded-full transition-all text-sm font-medium">
               <Play className="w-4 h-4 fill-current" /> Watch 2-min demo
-            </button>
+            </Link>
           </motion.div>
 
           <motion.div variants={s(0.28)} initial="hidden" animate="visible"
@@ -801,9 +801,9 @@ export default function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                <button onClick={() => { setModal(true); setNotifyOpen(false); }} className={`w-full py-3 rounded-xl text-sm font-bold text-center transition-all ${t.highlight ? "bg-gold-400 hover:bg-gold-500 text-navy-950" : "border border-gray-200 hover:border-navy-300 text-gray-700 hover:bg-gray-50"}`}>
+                <Link href="/demo" target="_blank" rel="noopener" className={`block w-full py-3 rounded-xl text-sm font-bold text-center transition-all ${t.highlight ? "bg-gold-400 hover:bg-gold-500 text-navy-950" : "border border-gray-200 hover:border-navy-300 text-gray-700 hover:bg-gray-50"}`}>
                   {t.cta} →
-                </button>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -838,10 +838,10 @@ export default function LandingPage() {
             <p className="text-navy-300 text-lg mb-10 max-w-xl mx-auto">
               See how Polaris works in 15 minutes. Watch the live demo now — no email, no signup, just insights.
             </p>
-            <button onClick={() => { setModal(true); setNotifyOpen(false); }}
-              className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-12 py-5 rounded-full transition-all hover:scale-105 flex items-center gap-3 shadow-lg shadow-emerald-500/30 mx-auto">
+            <Link href="/demo" target="_blank" rel="noopener"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-12 py-5 rounded-full transition-all hover:scale-105 inline-flex items-center gap-3 shadow-lg shadow-emerald-500/30 mx-auto">
               <Play className="w-5 h-5 fill-current" /> Watch the demo now
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>
